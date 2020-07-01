@@ -62,39 +62,9 @@ const Intro: React.FC<NavigationStackScreenProps> = ({ navigation }) => {
         <Container testID={'ONBOARDING_WELCOME_TOP'}>
           <Container padding alignItems={'center'} marginTop={50}>
             <Text type={Constants.TextTypes.H2} bold>
-              Welcome to Daf
+              Welcome to Sabhi
             </Text>
-            <Button
-              fullWidth
-              block={Constants.ButtonBlocks.Outlined}
-              type={Constants.BrandOptions.Primary}
-              buttonText={'Click me!'}
-              onPress={() => {
-                console.log('Click me is calling!')
 
-                axios({
-                  method: 'post',
-                  url: 'https://sabhi-web.herokuapp.com/user',
-                  data: {
-                    name: 'hamza'
-
-                  }
-                }).then(data => {
-                  console.log('res data is: ', data);
-
-                }).catch(e => {
-                  console.log('e is: ', e);
-
-                });
-                // axios.get('https://my-json-server.typicode.com/typicode/demo/comments').then(data => {
-                //   console.log('res data is: ', data);
-
-                // }).catch(e => {
-                //   console.log('e is: ', e);
-
-                // });
-              }}
-            />
             <Container marginTop={4}>
               <Text type={Constants.TextTypes.Body}>
                 Building trust so you can grow
