@@ -38,7 +38,9 @@ const Onboarding: React.FC<Props> = ({ navigation }) => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Text>
         </Container>
-        <Container w={300} marginTop={30}>
+        <Container w={300} marginTop={30}
+          viewStyle={{ position: 'absolute', bottom: 50 }}
+        >
           <Button
             fullWidth
             type={Constants.BrandOptions.Primary}
