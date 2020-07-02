@@ -328,7 +328,7 @@ const Onboard = createStackNavigator(
   },
   {
     defaultNavigationOptions: {
-      headerTitle: headerLogo,
+      headerTitle: '',
       headerBackTitleVisible: false,
       headerStyle: {
         borderBottomWidth: 0,

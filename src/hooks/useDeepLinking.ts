@@ -11,9 +11,9 @@ const useDeepLinking = (navigation: any) => {
   const handleDeepLink = (e: any, url?: string) => {
     const linkUrl = e ? e.url : url
 
-    if (linkUrl.startsWith('dafmobile://hello')) {
+    if (linkUrl.startsWith('sabhimobile://hello')) {
       Alert.alert('Deeplink', 'Hello!')
-    } else if ('dafmobile://heythere') {
+    } else if ('sabhimobile://heythere') {
       // Do something with navigation.
       // navigation.navigate('Screen', {})
       Alert.alert('Deeplink', 'Hey!')

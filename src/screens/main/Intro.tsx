@@ -16,7 +16,9 @@ import { Colors } from '../../theme'
 import { Image, ActivityIndicator } from 'react-native'
 import { AppContext } from '../../providers/AppContext'
 
-const Intro: React.FC<NavigationStackScreenProps> = ({ navigation }) => {
+const Intro: React.FC<NavigationStackScreenProps> & {
+  navigationOptions: any
+} = ({ navigation }) => {
   const [selectedIdentity] = useContext(AppContext)
   const [loading, setLoading] = useState(true)
 
@@ -42,7 +44,7 @@ const Intro: React.FC<NavigationStackScreenProps> = ({ navigation }) => {
               <Container w={300}>
                 <Button
                   fullWidth
-                  block={Constants.ButtonBlocks.Outlined}
+                  block={Constants.ButtonBlocks.Filled}
                   type={Constants.BrandOptions.Primary}
                   buttonText={'Get Started'}
                   onPress={() => navigation.navigate('Onboarding')}
@@ -86,6 +88,13 @@ const Intro: React.FC<NavigationStackScreenProps> = ({ navigation }) => {
       )}
     </Screen>
   )
+}
+
+
+Intro.navigationOptions = ({ navigation }: any) => {
+  return {
+    header: null
+  }
 }
 
 export default Intro

@@ -1,3 +1,3 @@
-# UI UX Lib
+# UIUX Lib
 
-UI UX is a simple but flexible UI framework for React Native
+UIUX is a simple but flexible UI framework for React Native

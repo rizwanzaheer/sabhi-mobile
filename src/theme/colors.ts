@@ -6,7 +6,7 @@ export default {
   LIGHT_GREY: '#BBBBBB',
   MEDIUM_GREY: '#CCCCCC',
   DARK_GREY: '#111111',
-  BRAND: '#0F9ED3',
+  BRAND: '#35568D',
   // WARN: '#D63A59',
   CONFIRM: '#3DCF8A',
   ACCENT: '#E89835',
