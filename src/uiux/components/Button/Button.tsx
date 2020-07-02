@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { TouchableHighlight, TouchableOpacity, ViewStyle } from 'react-native'
 import { withTheme } from '../../theming'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import Text, { TextTypes } from '../Text/Text'
 import Container from '../Container/Container'
 
-export const ButtonBlocks: Kancha.BlocksStatic = {
+export const ButtonBlocks: UIUX.BlocksStatic = {
   Outlined: 'outlined',
   Filled: 'filled',
   Clear: 'clear',
@@ -15,11 +15,11 @@ interface ButtonProps {
   /**
    * The button type. This sets the theme color
    */
-  type?: Kancha.BrandPropOptions
+  type?: UIUX.BrandPropOptions
   /**
    * The block appearance of the button
    */
-  block?: Kancha.BlockPropsOptions
+  block?: UIUX.BlockPropsOptions
   /**
    * The text to be displayed
    */
@@ -96,7 +96,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> & {
-  Block: Kancha.BlocksStatic
+  Block: UIUX.BlocksStatic
 } = ({
   type,
   block,
@@ -116,75 +116,75 @@ const Button: React.FC<ButtonProps> & {
   shadowOpacity,
   theme,
 }) => {
-  const style: ViewStyle = {
-    ...(block && block === 'filled'
-      ? { backgroundColor: type ? theme.colors[type].button : theme.colors.primary.button }
-      : {}),
-    ...(block && block === 'outlined'
-      ? {
+    const style: ViewStyle = {
+      ...(block && block === 'filled'
+        ? { backgroundColor: type ? theme.colors[type].button : theme.colors.primary.button }
+        : {}),
+      ...(block && block === 'outlined'
+        ? {
           backgroundColor: theme.colors.primary.background,
           borderWidth: 2,
           borderColor: type ? theme.colors[type].button : theme.colors.primary.button,
         }
-      : {}),
-    ...(noPadding || iconButton
-      ? {}
-      : { padding: small ? theme.spacing.default / 2 : theme.spacing.default }),
-    alignItems: 'center',
-    ...(fullWidth ? {} : { maxWidth: 300 }),
-    borderRadius: theme.roundedCorners.buttons,
-    ...(centered ? { alignSelf: 'center' } : {}),
-    ...(disabled ? { opacity: 0.2 } : {}),
-    ...(shadowOpacity
-      ? { shadowColor: '#000000', shadowRadius: 15, shadowOpacity, elevation: shadowOpacity * 10 }
-      : {}),
-  }
+        : {}),
+      ...(noPadding || iconButton
+        ? {}
+        : { padding: small ? theme.spacing.default / 2 : theme.spacing.default }),
+      alignItems: 'center',
+      ...(fullWidth ? {} : { maxWidth: 300 }),
+      borderRadius: theme.roundedCorners.buttons,
+      ...(centered ? { alignSelf: 'center' } : {}),
+      ...(disabled ? { opacity: 0.2 } : {}),
+      ...(shadowOpacity
+        ? { shadowColor: '#000000', shadowRadius: 15, shadowOpacity, elevation: shadowOpacity * 10 }
+        : {}),
+    }
 
-  return navButton ? (
-    <TouchableOpacity
-      style={style}
-      onPress={onPress}
-      disabled={disabled}
-      testID={testID}
-      accessibilityLabel={testID}
-    >
-      <Text
-        textDecorationLine={textDecorationLine}
-        type={TextTypes.NavButton}
-        buttonTextColor={disabled ? 'secondary' : type}
-        block={block}
+    return navButton ? (
+      <TouchableOpacity
+        style={style}
+        onPress={onPress}
+        disabled={disabled}
+        testID={testID}
+        accessibilityLabel={testID}
       >
-        {buttonText}
-      </Text>
-    </TouchableOpacity>
-  ) : (
-    <TouchableHighlight
-      testID={testID}
-      accessibilityLabel={testID}
-      disabled={disabled}
-      onPress={onPress}
-      style={style}
-      underlayColor={
-        block === ButtonBlocks.Clear || iconButton ? 'transparent' : type && theme.colors[type].underlay
-      }
-    >
-      <Container flexDirection={'row'} justifyContent={'center'}>
-        {icon && <Container marginRight={10}>{icon}</Container>}
-        <Container alignItems={'center'} justifyContent={'center'}>
-          <Text
-            textDecorationLine={textDecorationLine}
-            type={small ? TextTypes.ButtonSmall : TextTypes.Button}
-            buttonTextColor={disabled ? 'secondary' : type}
-            block={block}
-            bold={bold}
-          >
-            {buttonText}
-          </Text>
-        </Container>
-      </Container>
-    </TouchableHighlight>
-  )
-}
+        <Text
+          textDecorationLine={textDecorationLine}
+          type={TextTypes.NavButton}
+          buttonTextColor={disabled ? 'secondary' : type}
+          block={block}
+        >
+          {buttonText}
+        </Text>
+      </TouchableOpacity>
+    ) : (
+        <TouchableHighlight
+          testID={testID}
+          accessibilityLabel={testID}
+          disabled={disabled}
+          onPress={onPress}
+          style={style}
+          underlayColor={
+            block === ButtonBlocks.Clear || iconButton ? 'transparent' : type && theme.colors[type].underlay
+          }
+        >
+          <Container flexDirection={'row'} justifyContent={'center'}>
+            {icon && <Container marginRight={10}>{icon}</Container>}
+            <Container alignItems={'center'} justifyContent={'center'}>
+              <Text
+                textDecorationLine={textDecorationLine}
+                type={small ? TextTypes.ButtonSmall : TextTypes.Button}
+                buttonTextColor={disabled ? 'secondary' : type}
+                block={block}
+                bold={bold}
+              >
+                {buttonText}
+              </Text>
+            </Container>
+          </Container>
+        </TouchableHighlight>
+      )
+  }
 
 Button.Block = ButtonBlocks
 

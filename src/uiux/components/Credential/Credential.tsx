@@ -4,7 +4,7 @@ import Text, { TextTypes } from '../Text/Text'
 import Avatar from '../Avatar/Avatar'
 import Card from '../Card/Card'
 import Icon from '../Icon/Icon'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import { withTheme } from '../../theming'
 import QRCode from 'react-native-qrcode-svg'
 
@@ -18,15 +18,15 @@ interface Field {
 
 export interface CredentialProps {
   onPress?: () => void
-  issuer: Kancha.Identity
-  subject: Kancha.Identity
+  issuer: UIUX.Identity
+  subject: UIUX.Identity
   exp: number
   jwt?: string
   qrSize?: number
   fields: Field[]
   testID?: string
   shadow?: number
-  background?: Kancha.BrandPropOptions
+  background?: UIUX.BrandPropOptions
   detailMode?: boolean
   marginBottom?: number
   theme: any
@@ -123,10 +123,10 @@ const Credential: React.FC<CredentialProps> = ({
                     />
                   </Container>
                 ) : (
-                  <Text type={TextTypes.ActivityTitle}>
-                    {field.isObj ? 'Type not supported yet' : field.value}
-                  </Text>
-                )}
+                    <Text type={TextTypes.ActivityTitle}>
+                      {field.isObj ? 'Type not supported yet' : field.value}
+                    </Text>
+                  )}
               </Container>
             </Container>
           )

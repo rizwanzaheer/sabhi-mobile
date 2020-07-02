@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { View, ViewStyle, StyleSheet } from 'react-native'
 import { withTheme } from '../../theming'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 
 interface ContainerProps {
   /** Test ID used for e2e tests */
@@ -26,7 +26,7 @@ interface ContainerProps {
   flex?: number | undefined
 
   /** Pre-defined backgrounds accordign to the theme. use these where possible. */
-  background?: Kancha.BrandPropOptions
+  background?: UIUX.BrandPropOptions
 
   /** Temporary option to create custom color. Avoid is possible and deprecate if you can by modifying the theme */
   backgroundColor?: string
@@ -39,13 +39,13 @@ interface ContainerProps {
 
   /** Justify Content */
   justifyContent?:
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'space-between'
-    | 'space-around'
-    | 'space-evenly'
-    | undefined
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around'
+  | 'space-evenly'
+  | undefined
 
   /** Set the bottom divider */
   dividerBottom?: boolean
@@ -114,7 +114,7 @@ interface ContainerProps {
 }
 
 /**
- * `Container` is the most fundamental building block in Kancha and should be used anywhere you would use a `View`.
+ * `Container` is the most fundamental building block in UIUX and should be used anywhere you would use a `View`.
  * In most cases the built-in React Native `View` component is used in conjunction with some some simple layout styles like flexbox casuing a mess of styles.
  * Using a `Container` these can just be added as props for declarative layouts that are easy to read.
  *
@@ -161,14 +161,14 @@ const Container: React.FunctionComponent<ContainerProps> = props => {
     ...(props.disabled ? { opacity: 0.5 } : {}),
     ...(props.shadow
       ? {
-          elevation: props.shadow * 10,
-          shadowColor: '#ffffff',
-          shadowOpacity: 0.2,
-          shadowRadius: props.shadow * 5,
-          backgroundColor: props.backgroundColor
-            ? props.background && props.theme.colors[props.background].background
-            : '#ffffff',
-        }
+        elevation: props.shadow * 10,
+        shadowColor: '#ffffff',
+        shadowOpacity: 0.2,
+        shadowRadius: props.shadow * 5,
+        backgroundColor: props.backgroundColor
+          ? props.background && props.theme.colors[props.background].background
+          : '#ffffff',
+      }
       : {}),
 
     /** Margins */

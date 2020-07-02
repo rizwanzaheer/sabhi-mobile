@@ -1,6 +1,6 @@
-import * as Kancha from '../types'
+import * as UIUX from '../types'
 
-export const BrandOptions: Kancha.BrandTypeStatic = {
+export const BrandOptions: UIUX.BrandTypeStatic = {
   Primary: 'primary',
   Secondary: 'secondary',
   Tertiary: 'tertiary',

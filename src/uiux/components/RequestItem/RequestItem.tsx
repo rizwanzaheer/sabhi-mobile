@@ -8,7 +8,7 @@ import Credential from '../Credential/Credential'
 import { TouchableHighlight } from 'react-native'
 import { withTheme } from '../../theming'
 import { RequestItemSelectable } from '../../types'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 
 const S = require('sugar/string')
 
@@ -24,7 +24,7 @@ interface CredentialField {
   value: string
 }
 
-interface RequestCredential extends Kancha.VerifiableCredential {
+interface RequestCredential extends UIUX.VerifiableCredential {
   fields: CredentialField[]
 }
 
@@ -81,7 +81,7 @@ interface RequestItem {
   /**
    *  When a VC is pressed
    */
-  onPressVC?: (vc: Kancha.VerifiableCredential) => void
+  onPressVC?: (vc: UIUX.VerifiableCredential) => void
   /**
    *  Close after select item
    */

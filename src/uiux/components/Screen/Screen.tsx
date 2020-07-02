@@ -3,7 +3,7 @@ import { ImageSourcePropType, SafeAreaView, StatusBar, ImageBackground } from 'r
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import Container from '../Container/Container'
 import { withTheme } from '../../theming'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 
 interface ScreenProps {
   /**
@@ -14,7 +14,7 @@ interface ScreenProps {
   /**
    * Background type
    */
-  background?: Kancha.BrandPropOptions
+  background?: UIUX.BrandPropOptions
 
   /**
    * Safe background color. This will over-ride other safearea background color options
@@ -115,8 +115,8 @@ const Screen: React.FC<ScreenProps> = props => {
         backgroundColor: props.background
           ? props.theme.colors[props.background].background
           : props.backgroundColor
-          ? props.backgroundColor
-          : props.theme.colors.secondary.background,
+            ? props.backgroundColor
+            : props.theme.colors.secondary.background,
       }}
       contentInsetAdjustmentBehavior={'never'}
     >

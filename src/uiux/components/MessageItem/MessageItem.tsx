@@ -3,7 +3,7 @@ import { TouchableHighlight } from 'react-native'
 // import { withTheme } from '../../theming'
 
 import Container from '../Container/Container'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import Text, { TextTypes } from '../Text/Text'
 import Avatar from '../Avatar/Avatar'
 import Icon from '../Icon/Icon'
@@ -22,8 +22,8 @@ interface VCFields {
 
 interface VC {
   hash: string
-  iss: Kancha.Identity
-  sub: Kancha.Identity
+  iss: UIUX.Identity
+  sub: UIUX.Identity
   nbf?: number
   iat?: number
   exp?: number
@@ -39,9 +39,9 @@ export interface DAFMessage {
   nbf?: number
   jwt: string
   vis: string
-  iss: Kancha.Identity
-  sub: Kancha.Identity
-  aud?: Kancha.Identity
+  iss: UIUX.Identity
+  sub: UIUX.Identity
+  aud?: UIUX.Identity
   vc?: VC[]
 }
 
@@ -99,8 +99,8 @@ const MessageItem: React.FC<MessageItemProps> = ({ message, viewMessage, viewPro
                 &nbsp;{subject.shortId}
               </Text>
             ) : (
-              <Text bold>&nbsp;you</Text>
-            )}
+                <Text bold>&nbsp;you</Text>
+              )}
           </Text>
           <Container marginTop={5}>
             <Text type={TextTypes.ActivitySubTitle}>

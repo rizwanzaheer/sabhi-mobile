@@ -4,7 +4,7 @@ import Container from '../Container/Container'
 import Button, { ButtonBlocks } from '../Button/Button'
 import Avatar from '../Avatar/Avatar'
 import ActivityItemHeader from '../../components/ActivityItemHeader/ActivityItemHeader'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import { withTheme } from '../../theming'
 import { BrandOptions } from '../../constants'
 
@@ -27,7 +27,7 @@ interface ActivityItemProps {
   /**
    * The issuer of this message item
    */
-  sender: Kancha.Identity
+  sender: UIUX.Identity
 
   /**
    * The activity that is takaing place
@@ -37,12 +37,12 @@ interface ActivityItemProps {
   /**
    * The subject
    */
-  receiver: Kancha.Identity
+  receiver: UIUX.Identity
 
   /**
    * The viewer
    */
-  viewer: Kancha.Identity
+  viewer: UIUX.Identity
 
   /**
    * The reason for the message

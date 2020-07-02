@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { Text, TextStyle } from 'react-native'
 import { withTheme } from '../../theming'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 
-export const TextTypes: Kancha.TextTypesStatic = {
+export const TextTypes: UIUX.TextTypesStatic = {
   H1: 'h1',
   H2: 'h2',
   H3: 'h3',
@@ -23,7 +23,7 @@ export const TextTypes: Kancha.TextTypesStatic = {
   SectionHeader: 'sectionHeader',
 }
 /**
- * Kancha Text Props
+ * UIUX Text Props
  */
 
 export interface TextProps {
@@ -49,7 +49,7 @@ export interface TextProps {
   /**
    * Color prop is used to configure button text colors
    */
-  buttonTextColor?: Kancha.BrandPropOptions
+  buttonTextColor?: UIUX.BrandPropOptions
 
   /**
    * Overide the brand color
@@ -59,7 +59,7 @@ export interface TextProps {
   /**
    * Overide the color with a warning color
    */
-  block?: Kancha.BlockPropsOptions
+  block?: UIUX.BlockPropsOptions
 
   /**
    * Make the text bold
@@ -112,8 +112,8 @@ export interface TextProps {
   theme: any
 }
 
-const KanchaText: React.FC<TextProps> & { Types: Kancha.TextTypesStatic } = props => {
-  const TextThemeMap: Kancha.TextDefaultThemeMapTypes = {
+const UIUXText: React.FC<TextProps> & { Types: UIUX.TextTypesStatic } = props => {
+  const TextThemeMap: UIUX.TextDefaultThemeMapTypes = {
     h1: {
       fontSize: props.theme.text.sizes.h1,
       color: props.theme.colors.primary.text,
@@ -189,10 +189,10 @@ const KanchaText: React.FC<TextProps> & { Types: Kancha.TextTypesStatic } = prop
     ...(props.textAlign ? { textAlign: props.textAlign } : {}),
     ...(props.buttonTextColor
       ? {
-          color: props.block
-            ? props.theme.colors[props.buttonTextColor].buttonText[props.block]
-            : props.theme.colors[props.buttonTextColor].buttonText.filled,
-        }
+        color: props.block
+          ? props.theme.colors[props.buttonTextColor].buttonText[props.block]
+          : props.theme.colors[props.buttonTextColor].buttonText.filled,
+      }
       : {}),
     ...(props.paddingBottom ? { paddingBottom: props.paddingBottom } : {}),
     ...(props.paddingBottom && typeof props.paddingBottom === 'boolean'
@@ -216,6 +216,6 @@ const KanchaText: React.FC<TextProps> & { Types: Kancha.TextTypesStatic } = prop
   )
 }
 
-KanchaText.Types = TextTypes
+UIUXText.Types = TextTypes
 
-export default withTheme(KanchaText)
+export default withTheme(UIUXText)

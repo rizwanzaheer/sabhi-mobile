@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { TouchableHighlight, ViewStyle } from 'react-native'
 import Container from '../Container/Container'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import { withTheme } from '../../theming'
 import Device from '../../services/device'
 
@@ -10,7 +10,7 @@ interface CardProps {
   shadow?: number
   br?: number
   testID?: string
-  background?: Kancha.BrandPropOptions
+  background?: UIUX.BrandPropOptions
   marginBottom?: number
   theme: any
 }
@@ -32,11 +32,11 @@ const Card: React.FC<CardProps> = ({
     marginBottom: marginBottom || theme.spacing.default,
     ...(shadow
       ? {
-          shadowColor: '#000000',
-          shadowRadius: shadow * 4,
-          shadowOpacity: shadow / 15,
-          elevation: 5,
-        }
+        shadowColor: '#000000',
+        shadowRadius: shadow * 4,
+        shadowOpacity: shadow / 15,
+        elevation: 5,
+      }
       : {}),
   }
   return (

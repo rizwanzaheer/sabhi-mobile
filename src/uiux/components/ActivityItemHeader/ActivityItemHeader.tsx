@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Text, { TextTypes } from '../Text/Text'
 import Container from '../Container/Container'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import { formatDistanceToNow } from 'date-fns'
 
 interface ActivityItemHeaderProps {
@@ -14,11 +14,11 @@ interface ActivityItemHeaderProps {
   // Activity text
   activity?: string
   // Issuer
-  issuer: Kancha.Identity
+  issuer: UIUX.Identity
   // Subject
-  subject: Kancha.Identity
+  subject: UIUX.Identity
   // Profile Action
-  viewer: Kancha.Identity
+  viewer: UIUX.Identity
   profileAction: (id: string) => void
 }
 
@@ -50,23 +50,23 @@ const ActivityItemHeader: React.FC<ActivityItemHeaderProps> = ({
             </Text>
           </Text>
         ) : (
-          <Text>
-            <Text type={TextTypes.ActivityTitle} bold onPress={() => profileAction(issuer.did)}>
-              {viewerIsIssuer ? 'You' : issuer.shortId}
+            <Text>
+              <Text type={TextTypes.ActivityTitle} bold onPress={() => profileAction(issuer.did)}>
+                {viewerIsIssuer ? 'You' : issuer.shortId}
+              </Text>
+              <Text type={TextTypes.ActivityTitle}>&nbsp;{activity}</Text>
+              {subject ? (
+                <Text type={TextTypes.ActivityTitle} bold onPress={() => profileAction(subject.did)}>
+                  &nbsp;
+                  {viewerIsSubject && viewerIsIssuer ? 'yourself' : viewerIsSubject ? 'you' : subject.shortId}
+                </Text>
+              ) : (
+                  <Text type={TextTypes.ActivityTitle} bold onPress={() => profileAction(viewer.did)}>
+                    &nbsp;you
+                  </Text>
+                )}
             </Text>
-            <Text type={TextTypes.ActivityTitle}>&nbsp;{activity}</Text>
-            {subject ? (
-              <Text type={TextTypes.ActivityTitle} bold onPress={() => profileAction(subject.did)}>
-                &nbsp;
-                {viewerIsSubject && viewerIsIssuer ? 'yourself' : viewerIsSubject ? 'you' : subject.shortId}
-              </Text>
-            ) : (
-              <Text type={TextTypes.ActivityTitle} bold onPress={() => profileAction(viewer.did)}>
-                &nbsp;you
-              </Text>
-            )}
-          </Text>
-        )}
+          )}
       </Container>
       <Text type={TextTypes.ActivitySubTitle}>{formatDistanceToNow(date)} ago</Text>
     </Container>

@@ -3,7 +3,7 @@ import { ImageBackground, ViewStyle } from 'react-native'
 import Container from '../Container/Container'
 import Text, { TextTypes } from '../Text/Text'
 import Avatar from '../Avatar/Avatar'
-import * as Kancha from '../../types'
+import * as UIUX from '../../types'
 import { withTheme } from '../../theming'
 
 interface BannerProps {
@@ -25,7 +25,7 @@ interface BannerProps {
   /**
    * Issuer
    */
-  issuer: Kancha.Identity
+  issuer: UIUX.Identity
 
   /**
    * Title of banner
