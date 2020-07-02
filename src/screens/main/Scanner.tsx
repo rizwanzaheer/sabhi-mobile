@@ -4,7 +4,7 @@
  */
 import React, { useState, useContext } from 'react'
 import { WalletConnectContext } from '../../providers/WalletConnect'
-import { Container, FabButton, Screen } from '@kancha/kancha-ui'
+import { Container, FabButton, Screen } from '@uiux'
 import { RNCamera } from 'react-native-camera'
 import { Colors, Icons } from '../../theme'
 import { TextInput } from 'react-native-gesture-handler'
@@ -121,13 +121,13 @@ export default (props: any) => {
             />
           </Container>
         ) : (
-          <RNCamera
-            testID={'CAMERA'}
-            captureAudio={false}
-            style={{ flex: 1 }}
-            onBarCodeRead={onBarCodeRead}
-          />
-        )}
+            <RNCamera
+              testID={'CAMERA'}
+              captureAudio={false}
+              style={{ flex: 1 }}
+              onBarCodeRead={onBarCodeRead}
+            />
+          )}
       </Container>
     </Screen>
   )

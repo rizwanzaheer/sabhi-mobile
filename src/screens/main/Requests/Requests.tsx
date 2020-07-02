@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { Container } from '@kancha/kancha-ui'
+import { Container } from '@uiux'
 import SessionRequest from './SessionRequest'
 import CredentialAccept from './CredentialAccept'
 import SelectiveDisclosure from './SelectiveDisclosure'
@@ -8,7 +8,7 @@ import AppConstants from '../../../constants/index'
 import { useNavigationParam } from 'react-navigation-hooks'
 import { AppContext } from '../../../providers/AppContext'
 
-interface RequestsProps {}
+interface RequestsProps { }
 
 const Requests: React.FC<RequestsProps> = props => {
   const [selectedIdentity] = useContext(AppContext)

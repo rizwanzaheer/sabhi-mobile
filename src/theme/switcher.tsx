@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext, useEffect } from 'react'
-import { ThemeProvider } from '@kancha/kancha-ui'
+import { ThemeProvider } from '@uiux'
 import createTheme from './theme'
 
 // import { Appearance } from 'react-native'

@@ -3,7 +3,7 @@
  */
 import React, { useEffect, useContext } from 'react'
 import { ActivityIndicator } from 'react-native'
-import { Container, Text, Screen, Constants } from '@kancha/kancha-ui'
+import { Container, Text, Screen, Constants } from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { useMutation } from '@apollo/react-hooks'
 import {

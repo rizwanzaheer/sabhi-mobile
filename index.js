@@ -10,7 +10,7 @@ import { name as appName } from './app.json'
 // import * as Sentry from '@sentry/react-native'
 // import analytics from '@segment/analytics-react-native'
 import { enableScreens } from 'react-native-screens'
-import { Device } from '@kancha/kancha-ui'
+import { Device } from '@uiux'
 import Debug from 'debug'
 const debug = Debug('index')
 

@@ -6,7 +6,7 @@ import {
   Indicator,
   Screen,
   Button,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { WalletConnectContext } from '../../../providers/WalletConnect'
 import { useNavigation } from 'react-navigation-hooks'
 

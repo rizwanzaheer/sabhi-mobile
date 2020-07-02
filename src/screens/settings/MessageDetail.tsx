@@ -7,7 +7,7 @@ import {
   Avatar,
   Icon,
   Device,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationScreen } from '../../navigators'
 import JSONTree from 'react-native-json-tree'
 import { useNavigationParam } from 'react-navigation-hooks'

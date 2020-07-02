@@ -10,7 +10,7 @@ import {
   Typings,
   Indicator,
   Text,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { Colors } from '../../theme'
 import { useMutation } from 'react-apollo'

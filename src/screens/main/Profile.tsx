@@ -6,7 +6,7 @@ import {
   Avatar,
   Constants,
   Icon,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { useQuery } from '@apollo/react-hooks'
 import { GET_IDENTITY } from '../../lib/graphql/queries'
@@ -14,7 +14,7 @@ import { ActivityIndicator } from 'react-native'
 import { Colors } from '../../theme'
 import hexToRgba from 'hex-to-rgba'
 
-interface Props extends NavigationStackScreenProps {}
+interface Props extends NavigationStackScreenProps { }
 
 const Profile: React.FC<Props> = ({ navigation }) => {
   const did = navigation.getParam('did')
@@ -114,14 +114,14 @@ const Profile: React.FC<Props> = ({ navigation }) => {
               This is your own profile.
             </Text>
           ) : (
-            <Container>
-              <Text type={Constants.TextTypes.Body}>
-                This is an identity profile where you will be able to see all
-                the interactions between you and them. Data share flows will
-                also start here.
+              <Container>
+                <Text type={Constants.TextTypes.Body}>
+                  This is an identity profile where you will be able to see all
+                  the interactions between you and them. Data share flows will
+                  also start here.
               </Text>
-            </Container>
-          )}
+              </Container>
+            )}
         </Container>
       </Container>
     </Screen>

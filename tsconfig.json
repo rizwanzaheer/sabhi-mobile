@@ -3,7 +3,9 @@
     "target": "es2015",
     "module": "es2015",
     "importHelpers": true,
-    "lib": ["es2017"],
+    "lib": [
+      "es2017"
+    ],
     "jsx": "react-native",
     "noEmit": true,
     "strict": true,
@@ -13,11 +15,25 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "Serto/*": ["./*"],
-      "serto-graph": ["./lib/serto-graph"]
+      "Serto/*": [
+        "./*"
+      ],
+      "serto-graph": [
+        "./lib/serto-graph"
+      ],
+      "@uiux": [
+        "./src/uiux"
+      ],
     }
   },
-  "types": ["jest"],
-  "include": ["./src/**/*", "@types"],
-  "exclude": ["node_modules"]
+  "types": [
+    "jest"
+  ],
+  "include": [
+    "./src/**/*",
+    "@types"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

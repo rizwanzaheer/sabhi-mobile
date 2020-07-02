@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Screen, Container, Button, Constants, Text } from '@kancha/kancha-ui'
+import { Screen, Container, Button, Constants, Text } from '@uiux'
 import { NavigationStackProp } from 'react-navigation-stack'
 
 type Props = {

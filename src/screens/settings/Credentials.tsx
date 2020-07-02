@@ -13,13 +13,13 @@ import {
   Text,
   Avatar,
   Constants,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { Colors } from '../../theme'
 import { withNavigation } from 'react-navigation'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { GET_CREDENTIALS_FOR_IDENTITY } from '../../lib/graphql/queries'
 
-interface Props extends NavigationStackScreenProps {}
+interface Props extends NavigationStackScreenProps { }
 
 export const Credentials: React.FC<Props> = props => {
   const { navigation } = props

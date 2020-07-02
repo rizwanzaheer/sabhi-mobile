@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Avatar } from '@kancha/kancha-ui'
+import { Avatar } from '@uiux'
 import { useQuery } from 'react-apollo'
 import { GET_VIEWER } from '../../lib/graphql/queries'
 import { ActivityIndicator } from 'react-native'
@@ -18,14 +18,14 @@ export default ({ tintColor }: TabAvatarProps) => {
   return loading ? (
     <ActivityIndicator />
   ) : (
-    !loading && data && data.viewer && (
-      <Avatar
-        {...source}
-        backgroundColor={tintColor}
-        border
-        address={data && data.viewer && data.viewer.did}
-        gravatarType={'retro'}
-      />
+      !loading && data && data.viewer && (
+        <Avatar
+          {...source}
+          backgroundColor={tintColor}
+          border
+          address={data && data.viewer && data.viewer.did}
+          gravatarType={'retro'}
+        />
+      )
     )
-  )
 }

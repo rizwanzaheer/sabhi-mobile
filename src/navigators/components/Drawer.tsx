@@ -9,7 +9,7 @@ import {
   ListItem,
   Section,
   Constants,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { Colors } from '../../theme'
 
 // tslint:disable-next-line:no-var-requires

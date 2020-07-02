@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollView } from 'react-native'
-import { Container, Typings, Connection, withTheme } from '@kancha/kancha-ui'
+import { Container, Typings, Connection, withTheme } from '@uiux'
 
 interface Identity extends Typings.Identity {
   isSelected: boolean

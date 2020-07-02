@@ -3,7 +3,7 @@
  *
  */
 import React from 'react'
-import { Container, Screen, ListItem, Section } from '@kancha/kancha-ui'
+import { Container, Screen, ListItem, Section } from '@uiux'
 import Config from 'react-native-config'
 
 export default () => {

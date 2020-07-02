@@ -10,7 +10,7 @@ import {
   Credential,
   Icon,
   Typings,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 import TabAvatar from '../../navigators/components/TabAvatar'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
@@ -23,7 +23,7 @@ import { AppContext } from '../../providers/AppContext'
 
 const SWITCH_IDENTITY = 'SWITCH_IDENTITY'
 
-interface Props extends NavigationStackScreenProps {}
+interface Props extends NavigationStackScreenProps { }
 
 const ViewerProfile: React.FC<Props> & { navigationOptions: any } = ({
   navigation,

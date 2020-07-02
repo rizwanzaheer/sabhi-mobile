@@ -4,7 +4,7 @@
  */
 import React, { useState } from 'react'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import { Container, Text, Screen, Constants, Button } from '@kancha/kancha-ui'
+import { Container, Text, Screen, Constants, Button } from '@uiux'
 import { Colors } from '../../theme'
 import hexToRgba from 'hex-to-rgba'
 import { useQuery, useLazyQuery } from 'react-apollo'

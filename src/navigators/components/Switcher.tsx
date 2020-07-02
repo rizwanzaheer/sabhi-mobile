@@ -9,7 +9,7 @@ import {
   Button,
   Icon,
   Overlay,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { useQuery, useMutation, useApolloClient } from '@apollo/react-hooks'
 import { Theme, Colors } from '../../theme'
 import {

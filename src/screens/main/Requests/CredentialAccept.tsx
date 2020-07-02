@@ -6,7 +6,7 @@ import {
   Indicator,
   Credential,
   Screen,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { WalletConnectContext } from '../../../providers/WalletConnect'
 import { useNavigation } from 'react-navigation-hooks'
 import { useApolloClient } from '@apollo/react-hooks'

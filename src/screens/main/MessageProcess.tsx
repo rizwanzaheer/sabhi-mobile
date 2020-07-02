@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { Screen, Container, Text, Constants, Button } from '@kancha/kancha-ui'
+import { Screen, Container, Text, Constants, Button } from '@uiux'
 import { ActivityIndicator } from 'react-native'
 import { useNavigation, useNavigationParam } from 'react-navigation-hooks'
 import { useMutation } from '@apollo/react-hooks'
 import { NEW_MESSAGE } from '../../lib/graphql/queries'
 
-interface MessageProcess {}
+interface MessageProcess { }
 
 const MessageProcess: React.FC<MessageProcess> = () => {
   const [parsingMessage, setParsing] = useState(true)

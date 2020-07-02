@@ -10,7 +10,7 @@ import {
   Constants,
   Button,
   Modal,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { useMutation } from '@apollo/react-hooks'

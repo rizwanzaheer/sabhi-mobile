@@ -7,7 +7,7 @@ import {
   RadioBtn,
   Constants,
   Typings,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 import { FlatList } from 'react-native'
@@ -19,7 +19,7 @@ interface CredentialStyle {
   shadow: number
 }
 
-interface Props extends NavigationStackScreenProps {}
+interface Props extends NavigationStackScreenProps { }
 
 const CredentialDetail: React.FC<Props> & { sharedElements: any } & {
   navigationOptions: any
@@ -67,31 +67,31 @@ const CredentialDetail: React.FC<Props> & { sharedElements: any } & {
     }
     index: number
   }) => (
-    <Container w={Device.width - 10} padding paddingRight={10}>
-      <ScrollView testID={'SCROLLVIEW'} scrollEventThrottle={16}>
-        <Credential
-          testID={'CREDENTIAL'}
-          onPress={() => sharingMode && selectCredential(index)}
-          detailMode
-          jwt={item.raw}
-          issuer={item.issuer}
-          subject={item.subject}
-          fields={item.claims}
-          exp={item.expirationDate}
-          {...selectedStyle(index)}
-        />
-        {sharingMode && (
-          <RadioBtn
-            testID={'RADIO_BTN'}
-            selected={isSelected(index)}
-            onPress={() => selectCredential(index)}
-          >
-            {isSelected(index) && 'Sharing'}
-          </RadioBtn>
-        )}
-      </ScrollView>
-    </Container>
-  )
+      <Container w={Device.width - 10} padding paddingRight={10}>
+        <ScrollView testID={'SCROLLVIEW'} scrollEventThrottle={16}>
+          <Credential
+            testID={'CREDENTIAL'}
+            onPress={() => sharingMode && selectCredential(index)}
+            detailMode
+            jwt={item.raw}
+            issuer={item.issuer}
+            subject={item.subject}
+            fields={item.claims}
+            exp={item.expirationDate}
+            {...selectedStyle(index)}
+          />
+          {sharingMode && (
+            <RadioBtn
+              testID={'RADIO_BTN'}
+              selected={isSelected(index)}
+              onPress={() => selectCredential(index)}
+            >
+              {isSelected(index) && 'Sharing'}
+            </RadioBtn>
+          )}
+        </ScrollView>
+      </Container>
+    )
 
   return (
     <Container flex={1} backgroundColor={Colors.BLACK}>

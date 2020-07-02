@@ -8,7 +8,7 @@ import {
   RequestItem,
   Screen,
   Button,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import {
   SIGN_VP,
   SEND_DIDCOMM_MUTATION,

@@ -15,7 +15,7 @@ import {
   Text,
   Icon,
   Card,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { TextInput, ScrollView } from 'react-native'
 import { useNavigation } from 'react-navigation-hooks'
 import { useQuery } from 'react-apollo'
@@ -31,7 +31,7 @@ interface Field {
 
 /**
  * Temporary implementation until all requirements have been ironed out.
- * Final component will be built in @kancha
+ * Final component will be built in @uiux
  */
 export default () => {
   const navigation = useNavigation()

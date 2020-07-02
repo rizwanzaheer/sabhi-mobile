@@ -9,7 +9,7 @@ import {
   Button,
   Constants,
   Device,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import axios from 'axios';
 import { Colors } from '../../theme'

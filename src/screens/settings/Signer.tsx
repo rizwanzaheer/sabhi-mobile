@@ -16,7 +16,7 @@ import {
   Screen,
   ListItem,
   Text,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { Colors } from '../../theme'
 
 import {
@@ -32,7 +32,7 @@ interface Identity {
   profileImage?: string
 }
 
-interface SignerProps extends NavigationStackScreenProps {}
+interface SignerProps extends NavigationStackScreenProps { }
 
 const Signer: React.FC<SignerProps> = props => {
   const { t } = useTranslation()
@@ -110,42 +110,42 @@ const Signer: React.FC<SignerProps> = props => {
             loading: boolean
             refetch: () => void
           }) => (
-            <FlatList
-              style={{ backgroundColor: Colors.LIGHTEST_GREY, flex: 1 }}
-              data={data && data.managedIdentities}
-              renderItem={({ item, index }) => (
-                <ListItem
-                  last={index === data.managedIdentities.length - 1}
-                  selected={item.isSelected}
-                  onPress={() => {
-                    props.navigation.push('DidViewer', {
-                      did: item.did,
-                    })
-                  }}
-                >
-                  {item.shortId}
-                </ListItem>
-              )}
-              keyExtractor={item => item.did}
-              onRefresh={refetch}
-              refreshing={loading}
-              ListHeaderComponent={
-                <Container background={Constants.BrandOptions.Primary}>
-                  <TextInput
-                    style={{
-                      borderWidth: 1,
-                      padding: 15,
-                      height: 100,
-                      borderColor: Colors.LIGHT_GREY,
+              <FlatList
+                style={{ backgroundColor: Colors.LIGHTEST_GREY, flex: 1 }}
+                data={data && data.managedIdentities}
+                renderItem={({ item, index }) => (
+                  <ListItem
+                    last={index === data.managedIdentities.length - 1}
+                    selected={item.isSelected}
+                    onPress={() => {
+                      props.navigation.push('DidViewer', {
+                        did: item.did,
+                      })
                     }}
-                    placeholder={'Enter seed phrase'}
-                    value={seed}
-                    onChangeText={setSeed}
-                  />
-                </Container>
-              }
-            />
-          )}
+                  >
+                    {item.shortId}
+                  </ListItem>
+                )}
+                keyExtractor={item => item.did}
+                onRefresh={refetch}
+                refreshing={loading}
+                ListHeaderComponent={
+                  <Container background={Constants.BrandOptions.Primary}>
+                    <TextInput
+                      style={{
+                        borderWidth: 1,
+                        padding: 15,
+                        height: 100,
+                        borderColor: Colors.LIGHT_GREY,
+                      }}
+                      placeholder={'Enter seed phrase'}
+                      value={seed}
+                      onChangeText={setSeed}
+                    />
+                  </Container>
+                }
+              />
+            )}
         </Query>
       </Container>
     </Screen>

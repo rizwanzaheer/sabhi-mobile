@@ -14,7 +14,7 @@ import {
   Avatar,
   Constants,
   useTheme,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { GET_ALL_IDENTITIES } from '../../lib/graphql/queries'
 
@@ -22,7 +22,7 @@ interface Result extends QueryResult {
   data: { identities: any[] }
 }
 
-interface Props extends NavigationStackScreenProps {}
+interface Props extends NavigationStackScreenProps { }
 
 const Connections: React.FC<Props> = props => {
   const theme = useTheme()
@@ -35,50 +35,50 @@ const Connections: React.FC<Props> = props => {
             error ? (
               <Text>{error.message}</Text>
             ) : (
-              <FlatList
-                style={{ flex: 1 }}
-                data={data && data.identities}
-                renderItem={({ item, index }) => {
-                  const imgSrc = item.profileImage
-                    ? { source: { uri: item.profileImage } }
-                    : {}
-                  return (
-                    <ListItem
-                      iconLeft={
-                        <Avatar
-                          {...imgSrc}
-                          address={item.did}
-                          type={'circle'}
-                          gravatarType={'retro'}
-                        />
-                      }
-                      // onPress={() => {
-                      //   props.navigation.push('Credentials', {
-                      //     did: item.did,
-                      //   })
-                      // }}
-                      last={index === data.identities.length - 1}
-                    >
-                      {item.shortId}
-                    </ListItem>
-                  )
-                }}
-                keyExtractor={item => item.did}
-                onRefresh={refetch}
-                refreshing={loading}
-                ListEmptyComponent={
-                  <Container padding>
-                    <Text
-                      type={Constants.TextTypes.H3}
-                      bold
-                      textColor={theme.colors.primary.text}
-                    >
-                      No Connections
+                <FlatList
+                  style={{ flex: 1 }}
+                  data={data && data.identities}
+                  renderItem={({ item, index }) => {
+                    const imgSrc = item.profileImage
+                      ? { source: { uri: item.profileImage } }
+                      : {}
+                    return (
+                      <ListItem
+                        iconLeft={
+                          <Avatar
+                            {...imgSrc}
+                            address={item.did}
+                            type={'circle'}
+                            gravatarType={'retro'}
+                          />
+                        }
+                        // onPress={() => {
+                        //   props.navigation.push('Credentials', {
+                        //     did: item.did,
+                        //   })
+                        // }}
+                        last={index === data.identities.length - 1}
+                      >
+                        {item.shortId}
+                      </ListItem>
+                    )
+                  }}
+                  keyExtractor={item => item.did}
+                  onRefresh={refetch}
+                  refreshing={loading}
+                  ListEmptyComponent={
+                    <Container padding>
+                      <Text
+                        type={Constants.TextTypes.H3}
+                        bold
+                        textColor={theme.colors.primary.text}
+                      >
+                        No Connections
                     </Text>
-                  </Container>
-                }
-              />
-            )
+                    </Container>
+                  }
+                />
+              )
           }
         </Query>
       </Container>

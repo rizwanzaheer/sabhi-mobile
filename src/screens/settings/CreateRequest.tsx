@@ -10,7 +10,7 @@ import {
   Text,
   Icon,
   RadioBtn,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { TextInput } from 'react-native'
 import { useNavigation } from 'react-navigation-hooks'
 import { useQuery } from 'react-apollo'
@@ -27,7 +27,7 @@ interface Claim {
 
 /**
  * Temporary implementation until all requirements have been ironed out.
- * Final component will be built in @kancha
+ * Final component will be built in @uiux
  */
 export default () => {
   const navigation = useNavigation()

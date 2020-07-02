@@ -6,14 +6,14 @@ import {
   Constants,
   Button,
   Device,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { ActivityIndicator } from 'react-native'
 import { useNavigationParam } from 'react-navigation-hooks'
 import { useQuery } from '@apollo/react-hooks'
 import { GET_MESSAGE } from '../../lib/graphql/queries'
 import QRCode from 'react-native-qrcode-svg'
 
-interface MessageProcess {}
+interface MessageProcess { }
 
 const MessageProcess: React.FC<MessageProcess> = () => {
   const hash = useNavigationParam('hash')

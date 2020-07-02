@@ -8,14 +8,14 @@ import {
   ListItem,
   Avatar,
   Device,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import SearchBar from '../../navigators/components/SearchBar'
 
 // tslint:disable-next-line:no-var-requires
 const avatar1 = require('../../assets/images/space-x-logo.jpg')
 
-interface Props extends NavigationStackScreenProps {}
+interface Props extends NavigationStackScreenProps { }
 
 const Explore: React.FC<Props> & {
   navigationOptions: any
@@ -65,29 +65,29 @@ const Explore: React.FC<Props> & {
           </Container>
         </Container>
       ) : (
-        <Container padding>
-          <Text type={Constants.TextTypes.H3} bold>
-            Explore web of trust
+          <Container padding>
+            <Text type={Constants.TextTypes.H3} bold>
+              Explore web of trust
           </Text>
-          <Container marginBottom>
-            <Container marginTop>
-              <Text type={Constants.TextTypes.Body}>
-                Here we will have the ability to explore the web of trust. We
-                will be able to search for credentials issued, received and view
-                the issuers 'public' profiles and all of our interactions with
-                them. And from the perpective of data - who and when we shared a
-                credential. As we iterate on this and users start to collect
-                more data and increase the complexity of the trust circles this
-                will grow and adapt to present the right information. This
-                should be interactive allowing the user to pin or highlight
-                credentials, connections or other data.
+            <Container marginBottom>
+              <Container marginTop>
+                <Text type={Constants.TextTypes.Body}>
+                  Here we will have the ability to explore the web of trust. We
+                  will be able to search for credentials issued, received and view
+                  the issuers 'public' profiles and all of our interactions with
+                  them. And from the perpective of data - who and when we shared a
+                  credential. As we iterate on this and users start to collect
+                  more data and increase the complexity of the trust circles this
+                  will grow and adapt to present the right information. This
+                  should be interactive allowing the user to pin or highlight
+                  credentials, connections or other data.
               </Text>
+              </Container>
             </Container>
-          </Container>
 
-          <Container marginTop></Container>
-        </Container>
-      )}
+            <Container marginTop></Container>
+          </Container>
+        )}
     </Screen>
   )
 }

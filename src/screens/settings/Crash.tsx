@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Screen, Container, Button, Constants } from '@kancha/kancha-ui'
+import { Screen, Container, Button, Constants } from '@uiux'
 // import * as Sentry from '@sentry/react-native'
 
 export default () => {

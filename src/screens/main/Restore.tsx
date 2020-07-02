@@ -3,7 +3,7 @@
  */
 import React, { useState } from 'react'
 import { TextInput } from 'react-native'
-import { Container, Text, Screen, Constants, Button } from '@kancha/kancha-ui'
+import { Container, Text, Screen, Constants, Button } from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { Colors } from '../../theme'
 import { useMutation } from '@apollo/react-hooks'

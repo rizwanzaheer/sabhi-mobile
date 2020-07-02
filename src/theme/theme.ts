@@ -1,4 +1,4 @@
-import { createTheme } from '@kancha/kancha-ui'
+import { createTheme } from '@uiux'
 import Colors from './colors'
 
 /**

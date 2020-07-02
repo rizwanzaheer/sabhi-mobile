@@ -3,7 +3,7 @@
  *
  */
 import React, { useState, useEffect } from 'react'
-import { Container, Screen, Text, Constants, Device } from '@kancha/kancha-ui'
+import { Container, Screen, Text, Constants, Device } from '@uiux'
 import { useNavigationParam } from 'react-navigation-hooks'
 import { useMutation } from 'react-apollo'
 import QRCode from 'react-native-qrcode-svg'
@@ -111,8 +111,8 @@ export default () => {
               {sending
                 ? 'Sending message...'
                 : sent
-                ? `Message sent to ${claim.subject}`
-                : ''}
+                  ? `Message sent to ${claim.subject}`
+                  : ''}
             </Text>
           </Container>
         </Container>

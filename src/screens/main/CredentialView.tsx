@@ -6,10 +6,10 @@ import {
   Text,
   Constants,
   Button,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { useNavigation, useNavigationParam } from 'react-navigation-hooks'
 
-interface CredentialViewProps {}
+interface CredentialViewProps { }
 
 const CredentialView: React.FC<CredentialViewProps> = () => {
   const navigation = useNavigation()

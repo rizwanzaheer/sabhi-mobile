@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { Screen, Container, Text, Constants, Section } from '@kancha/kancha-ui'
+import { Screen, Container, Text, Constants, Section } from '@uiux'
 import { withNavigation } from 'react-navigation'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 
-interface DidViewerProps extends NavigationStackScreenProps {}
+interface DidViewerProps extends NavigationStackScreenProps { }
 
 export const DidViewer: React.FC<DidViewerProps> = props => {
   const { navigation } = props

@@ -10,7 +10,7 @@ import {
   Constants,
   Button,
   Icon,
-} from '@kancha/kancha-ui'
+} from '@uiux'
 import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
 import { Colors } from '../../theme'
@@ -24,7 +24,7 @@ import {
 } from '../../lib/graphql/queries'
 import { useTranslation } from 'react-i18next'
 import { TouchableHighlight } from 'react-native-gesture-handler'
-import { Identity } from '@kancha/kancha-ui/dist/types'
+import { Identity } from '@uiux/dist/types'
 import hexToRgba from 'hex-to-rgba'
 
 interface Field {

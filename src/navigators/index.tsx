@@ -10,7 +10,7 @@ import {
 } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
-import { Icon, Container, Text } from '@kancha/kancha-ui'
+import { Icon, Container, Text } from '@uiux'
 import TabAvatar from './components/TabAvatar'
 import { Colors, Icons } from '../theme'
 import { Screens } from './screens'
