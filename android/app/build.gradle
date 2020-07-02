@@ -141,26 +141,27 @@ android {
         applicationId "com.sabhi.org"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 29
-        versionName "1.38.0"
+        versionCode 1
+        versionName "0.0.1"
         missingDimensionStrategy 'react-native-camera', 'general'
     }
 
     signingConfigs {
-        release {
-            storeFile file("../release-key.keystore")
-            storePassword 'test1234'
-            keyAlias 'my-key-alias'
-            keyPassword 'test1234'
-        }
         // release {
-        //     if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
-        //         storeFile file(MYAPP_UPLOAD_STORE_FILE)
-        //         storePassword MYAPP_UPLOAD_STORE_PASSWORD
-        //         keyAlias MYAPP_UPLOAD_KEY_ALIAS
-        //         keyPassword MYAPP_UPLOAD_KEY_PASSWORD
-        //     }
+
+        //     storeFile file("./my-upload-key.keystore")
+        //     storePassword 'test1234'
+        //     keyAlias 'my-key-alias'
+        //     keyPassword 'test1234'
         // }
+        release {
+            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                storeFile file(MYAPP_UPLOAD_STORE_FILE)
+                storePassword MYAPP_UPLOAD_STORE_PASSWORD
+                keyAlias MYAPP_UPLOAD_KEY_ALIAS
+                keyPassword MYAPP_UPLOAD_KEY_PASSWORD
+            }
+        }
     }
     
     splits {
@@ -177,7 +178,7 @@ android {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
 
-            // signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
         }
     }
 
