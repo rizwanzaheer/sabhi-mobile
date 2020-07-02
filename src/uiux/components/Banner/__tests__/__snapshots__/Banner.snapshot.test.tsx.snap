@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component(snapshot): Banner should render with default props 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "backgroundColor": "#333333",
+      "flex": 1,
+      "height": 250,
+    }
+  }
+>
+  <Image
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": 250,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0,0,0,0.8)",
+        "borderRadius": undefined,
+        "flex": 1,
+        "flexDirection": undefined,
+        "height": undefined,
+        "justifyContent": "center",
+        "margin": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": 15,
+        "width": undefined,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://www.gravatar.com/avatar/08e65c6403d55f307a163a5d7e4a97cf?s=112&d=retro",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#0078ff",
+            "borderRadius": 5,
+            "height": 56,
+            "width": 56,
+          },
+          Object {
+            "backgroundColor": "transparent",
+          },
+        ]
+      }
+    />
+    <View
+      pointerEvents="auto"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": undefined,
+          "borderRadius": undefined,
+          "flex": undefined,
+          "flexDirection": undefined,
+          "height": undefined,
+          "justifyContent": undefined,
+          "margin": undefined,
+          "marginBottom": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "padding": undefined,
+          "paddingBottom": undefined,
+          "paddingHorizontal": undefined,
+          "paddingLeft": undefined,
+          "paddingRight": undefined,
+          "paddingTop": 15,
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "flexWrap": "wrap",
+            "fontSize": 24,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Test Title
+      </Text>
+      <View
+        pointerEvents="auto"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": undefined,
+            "borderRadius": undefined,
+            "flex": undefined,
+            "flexDirection": undefined,
+            "height": undefined,
+            "justifyContent": undefined,
+            "margin": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": 5,
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "flexWrap": "wrap",
+              "fontSize": 14,
+            }
+          }
+        >
+          Test Subtitle
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Component(snapshot): Banner should render with default props 2`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "backgroundColor": "#333333",
+      "flex": 1,
+      "height": 250,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": 250,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#000000",
+        "borderRadius": undefined,
+        "flex": 1,
+        "flexDirection": undefined,
+        "height": undefined,
+        "justifyContent": "center",
+        "margin": undefined,
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": 15,
+        "width": undefined,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://www.gravatar.com/avatar/08e65c6403d55f307a163a5d7e4a97cf?s=112&d=retro",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#0078ff",
+            "borderRadius": 5,
+            "height": 56,
+            "width": 56,
+          },
+          Object {
+            "backgroundColor": "transparent",
+          },
+        ]
+      }
+    />
+    <View
+      pointerEvents="auto"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": undefined,
+          "borderRadius": undefined,
+          "flex": undefined,
+          "flexDirection": undefined,
+          "height": undefined,
+          "justifyContent": undefined,
+          "margin": undefined,
+          "marginBottom": undefined,
+          "marginLeft": undefined,
+          "marginRight": undefined,
+          "marginTop": undefined,
+          "padding": undefined,
+          "paddingBottom": undefined,
+          "paddingHorizontal": undefined,
+          "paddingLeft": undefined,
+          "paddingRight": undefined,
+          "paddingTop": 15,
+          "width": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "flexWrap": "wrap",
+            "fontSize": 24,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Test Title
+      </Text>
+      <View
+        pointerEvents="auto"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": undefined,
+            "borderRadius": undefined,
+            "flex": undefined,
+            "flexDirection": undefined,
+            "height": undefined,
+            "justifyContent": undefined,
+            "margin": undefined,
+            "marginBottom": undefined,
+            "marginLeft": undefined,
+            "marginRight": undefined,
+            "marginTop": undefined,
+            "padding": undefined,
+            "paddingBottom": undefined,
+            "paddingHorizontal": undefined,
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+            "paddingTop": 5,
+            "width": undefined,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "flexWrap": "wrap",
+              "fontSize": 14,
+            }
+          }
+        >
+          Test Subtitle
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,483 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component(snapshots): ActivityHeader should render incoming false with reason 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "alignItems": undefined,
+        "backgroundColor": undefined,
+        "borderRadius": undefined,
+        "flex": 1,
+        "flexDirection": undefined,
+        "height": undefined,
+        "justifyContent": undefined,
+        "margin": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Test Issuer
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+          }
+        }
+      >
+         
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+          }
+        }
+      >
+         so 
+        Test Name
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+         
+        to test the components
+      </Text>
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#BBBBBB",
+        "flexWrap": "wrap",
+        "fontSize": 15,
+      }
+    }
+  >
+    over 46 years
+     ago
+  </Text>
+</View>
+`;
+
+exports[`Component(snapshots): ActivityHeader should render incoming false without reason 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "alignItems": undefined,
+        "backgroundColor": undefined,
+        "borderRadius": undefined,
+        "flex": 1,
+        "flexDirection": undefined,
+        "height": undefined,
+        "justifyContent": undefined,
+        "margin": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Test Issuer
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+          }
+        }
+      >
+         
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+         
+        Test Name
+      </Text>
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#BBBBBB",
+        "flexWrap": "wrap",
+        "fontSize": 15,
+      }
+    }
+  >
+    over 46 years
+     ago
+  </Text>
+</View>
+`;
+
+exports[`Component(snapshots): ActivityHeader should render incoming true with reason 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "alignItems": undefined,
+        "backgroundColor": undefined,
+        "borderRadius": undefined,
+        "flex": 1,
+        "flexDirection": undefined,
+        "height": undefined,
+        "justifyContent": undefined,
+        "margin": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Test Issuer
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+          }
+        }
+      >
+         
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+          }
+        }
+      >
+         so 
+        Test Name
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+         
+        to test the components
+      </Text>
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#BBBBBB",
+        "flexWrap": "wrap",
+        "fontSize": 15,
+      }
+    }
+  >
+    over 46 years
+     ago
+  </Text>
+</View>
+`;
+
+exports[`Component(snapshots): ActivityHeader should render incoming true without reason 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+>
+  <View
+    pointerEvents="auto"
+    style={
+      Object {
+        "alignItems": undefined,
+        "backgroundColor": undefined,
+        "borderRadius": undefined,
+        "flex": 1,
+        "flexDirection": undefined,
+        "height": undefined,
+        "justifyContent": undefined,
+        "margin": undefined,
+        "marginBottom": 4,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Test Issuer
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+          }
+        }
+      >
+         
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#333333",
+            "flexWrap": "wrap",
+            "fontSize": 17,
+            "fontWeight": "bold",
+          }
+        }
+      >
+         
+        Test Name
+      </Text>
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#BBBBBB",
+        "flexWrap": "wrap",
+        "fontSize": 15,
+      }
+    }
+  >
+    over 46 years
+     ago
+  </Text>
+</View>
+`;

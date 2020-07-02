@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component(snapshops): Text renders correctly with all props 1`] = `
+<Text
+  selectable={true}
+  style={
+    Object {
+      "color": "#FFFFFF",
+      "flexWrap": "wrap",
+      "fontSize": 32,
+      "fontWeight": "bold",
+      "opacity": 0.9,
+      "paddingBottom": 10,
+      "textAlign": "center",
+      "textTransform": "uppercase",
+    }
+  }
+>
+  Hello World
+</Text>
+`;
+
+exports[`Component(snapshops): Text renders correctly with default padding bottom 1`] = `
+<Text
+  style={
+    Object {
+      "flexWrap": "wrap",
+      "paddingBottom": 15,
+    }
+  }
+>
+  Hello World
+</Text>
+`;
+
+exports[`Component(snapshops): Text renders correctly with no props 1`] = `
+<Text
+  style={
+    Object {
+      "flexWrap": "wrap",
+    }
+  }
+>
+  Hello World
+</Text>
+`;

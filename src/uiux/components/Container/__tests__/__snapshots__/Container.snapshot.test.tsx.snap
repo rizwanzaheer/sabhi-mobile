@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container renders correctly with absolute positioning 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "bottom": 20,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Container renders correctly with all props 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderBottomColor": "#CCCCCC",
+      "borderBottomWidth": 0.5,
+      "borderColor": "red",
+      "borderRadius": 5,
+      "borderTopColor": "#CCCCCC",
+      "borderTopWidth": 0.5,
+      "borderWidth": 1,
+      "elevation": 50,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 100,
+      "justifyContent": "center",
+      "margin": 15,
+      "marginBottom": 15,
+      "marginLeft": 15,
+      "marginRight": 15,
+      "marginTop": 15,
+      "padding": undefined,
+      "paddingBottom": 15,
+      "paddingHorizontal": undefined,
+      "paddingLeft": 15,
+      "paddingRight": 15,
+      "paddingTop": 15,
+      "shadowColor": "#ffffff",
+      "shadowOpacity": 0.2,
+      "shadowRadius": 25,
+      "width": 100,
+    }
+  }
+  testID="CONTAINER_TEST_ID"
+/>
+`;
+
+exports[`Container renders correctly with custom viewStyle 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": 1,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": 10,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`Container renders correctly with pointer events disabled 1`] = `
+<View
+  pointerEvents="none"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "opacity": 0.5,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`Container renders correctly with shorthand props 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": 15,
+      "paddingBottom": undefined,
+      "paddingHorizontal": 15,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`Container renders correctly with value props 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": 10,
+      "marginBottom": 10,
+      "marginLeft": 10,
+      "marginRight": 10,
+      "marginTop": 10,
+      "padding": undefined,
+      "paddingBottom": 10,
+      "paddingHorizontal": 10,
+      "paddingLeft": 10,
+      "paddingRight": 10,
+      "paddingTop": 10,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`Container renders shadow with background 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": "#ffffff",
+      "borderRadius": undefined,
+      "elevation": 40,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "shadowColor": "#ffffff",
+      "shadowOpacity": 0.2,
+      "shadowRadius": 20,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`Container renders shadow with backgroundColor 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": undefined,
+      "backgroundColor": undefined,
+      "borderRadius": undefined,
+      "elevation": 40,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": undefined,
+      "justifyContent": undefined,
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "shadowColor": "#ffffff",
+      "shadowOpacity": 0.2,
+      "shadowRadius": 20,
+      "width": undefined,
+    }
+  }
+/>
+`;

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component(snapshots): FabButton should render with all props 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#0078ff",
+      "borderRadius": 50,
+      "elevation": 2,
+      "height": 70,
+      "justifyContent": "center",
+      "opacity": 1,
+      "shadowColor": "#000000",
+      "shadowOpacity": 0.2,
+      "shadowRadius": 20,
+      "width": 70,
+    }
+  }
+>
+  <Icon
+    color="#000000"
+    name="ios-add"
+    size={35}
+  />
+</View>
+`;
+
+exports[`Component(snapshots): FabButton should render with default color 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#0078ff",
+      "borderRadius": 50,
+      "elevation": 3,
+      "height": 70,
+      "justifyContent": "center",
+      "opacity": 1,
+      "shadowColor": "#000000",
+      "shadowOpacity": 0.3,
+      "shadowRadius": 20,
+      "width": 70,
+    }
+  }
+>
+  <Icon
+    color="#FFFFFF"
+    name="ios-add"
+    size={35}
+  />
+</View>
+`;
+
+exports[`Component(snapshots): FabButton should render with required props 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#0078ff",
+      "borderRadius": 50,
+      "elevation": 3,
+      "height": 70,
+      "justifyContent": "center",
+      "opacity": 1,
+      "shadowColor": "#000000",
+      "shadowOpacity": 0.3,
+      "shadowRadius": 20,
+      "width": 70,
+    }
+  }
+/>
+`;

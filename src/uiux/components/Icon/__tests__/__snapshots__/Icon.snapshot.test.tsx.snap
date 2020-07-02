@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component(snapshots): Icon should render with all props 1`] = `
+<Icon
+  color="#FAFAFA"
+  name="ios-alert"
+  size={20}
+/>
+`;
+
+exports[`Component(snapshots): Icon should render with required props 1`] = `
+<Icon
+  color="#BBBBBB"
+  name="ios-alert"
+  size={26}
+/>
+`;

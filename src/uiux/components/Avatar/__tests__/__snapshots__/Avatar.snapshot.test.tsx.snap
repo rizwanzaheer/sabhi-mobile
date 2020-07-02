@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component(snapshots): Avatar should render a custom rounded gravatar 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "https://www.gravatar.com/avatar/77b6e2825ea079e26823f20cabbade94?s=64&d=monsterid",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0078ff",
+        "borderRadius": 5,
+        "height": 32,
+        "width": 32,
+      },
+      Object {
+        "backgroundColor": "transparent",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Component(snapshots): Avatar should render a default gravatar icon 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "https://www.gravatar.com/avatar/77b6e2825ea079e26823f20cabbade94?s=64&d=identicon",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0078ff",
+        "borderRadius": 16,
+        "height": 32,
+        "width": 32,
+      },
+      Object {
+        "backgroundColor": "transparent",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Component(snapshots): Avatar should render with no props 1`] = `
+<Image
+  source={
+    Object {
+      "uri": undefined,
+    }
+  }
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0078ff",
+        "borderRadius": 16,
+        "height": 32,
+        "width": 32,
+      },
+      Object {
+        "backgroundColor": "transparent",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Component(snapshots): Avatar should render with props 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "somehttp-image-uri",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0078ff",
+        "borderColor": "#FFFFFF",
+        "borderRadius": 0,
+        "borderWidth": 2,
+        "height": 32,
+        "width": 32,
+      },
+      Object {
+        "backgroundColor": "transparent",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Component(snapshots): Avatar should render with source props 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "somehttp-image-uri",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0078ff",
+        "borderRadius": 16,
+        "height": 32,
+        "width": 32,
+      },
+      Object {
+        "backgroundColor": "transparent",
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Component(snapshots): Avatar should render with title and background props 1`] = `
+<View
+  pointerEvents="auto"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#000000",
+      "borderRadius": 0,
+      "flex": undefined,
+      "flexDirection": undefined,
+      "height": 32,
+      "justifyContent": "center",
+      "margin": undefined,
+      "marginBottom": undefined,
+      "marginLeft": undefined,
+      "marginRight": undefined,
+      "marginTop": undefined,
+      "padding": undefined,
+      "paddingBottom": undefined,
+      "paddingHorizontal": undefined,
+      "paddingLeft": undefined,
+      "paddingRight": undefined,
+      "paddingTop": undefined,
+      "width": 32,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#ffffff",
+        "flexWrap": "wrap",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Sa
+  </Text>
+</View>
+`;
