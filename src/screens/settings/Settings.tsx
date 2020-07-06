@@ -91,7 +91,7 @@ const Settings: React.FC<NavigationStackScreenProps> = ({ navigation }) => {
               />
             }
           >
-            {themeType === 'dark' ? 'Dark Mode - experimental' : 'Light Mode'}
+            {themeType === 'dark' ? 'Dark Mode' : 'Light Mode'}
           </ListItem>
         </Section>
       </Container>

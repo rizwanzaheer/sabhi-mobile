@@ -17,7 +17,7 @@ interface LogItemProps {
   type: LogMessageType
 
   /**
-   * A category for the lo item
+   * A category for the log item
    */
   category?: string
 

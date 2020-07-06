@@ -8,7 +8,7 @@ import Button, { ButtonBlocks } from './components/Button/Button'
 import Icon from './components/Icon/Icon'
 import LogItem from './components/LogItem/LogItem'
 import ListItem from './components/ListItem/ListItem'
-import MessageItem, { DAFMessage } from './components/MessageItem/MessageItem'
+import MessageItem, { SabhiMessage } from './components/MessageItem/MessageItem'
 import Section from './components/Section/Section'
 import FabButton from './components/FabButton/FabButton'
 import Avatar from './components/Avatar/Avatar'
@@ -65,7 +65,7 @@ export {
   AccordionItem,
   MenuItem,
   MessageItem,
-  DAFMessage,
+  SabhiMessage,
   ActivityItem,
   ActivityItemHeader,
   Section,

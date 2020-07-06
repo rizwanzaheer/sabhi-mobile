@@ -9,7 +9,7 @@ import {
   Screen,
   Text,
   MessageItem,
-  DAFMessage,
+  SabhiMessage,
   Constants,
   useTheme,
 } from '@uiux'
@@ -30,7 +30,7 @@ export default () => {
     })
   }
 
-  const viewMessage = (msg: DAFMessage) => {
+  const viewMessage = (msg: SabhiMessage) => {
     navigation.navigate(Screens.MessageDetail.screen, {
       message: msg,
     })

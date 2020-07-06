@@ -30,7 +30,7 @@ interface VC {
   fields: VCFields[]
 }
 
-export interface DAFMessage {
+export interface SabhiMessage {
   type: string
   tag?: string
   rowId: string
@@ -46,9 +46,9 @@ export interface DAFMessage {
 }
 
 interface MessageItemProps {
-  message: DAFMessage
+  message: SabhiMessage
   theme: any
-  viewMessage: (message: DAFMessage) => void
+  viewMessage: (message: SabhiMessage) => void
   viewProfile: (did: string) => void
 }
 

@@ -39,7 +39,7 @@ export const resolvers = merge(
 
 const dbConnection = createConnection({
   type: 'react-native',
-  database: 'daf.sqlite',
+  database: 'sabhi.sqlite',
   location: 'default',
   synchronize: true,
   logging: ['error'],

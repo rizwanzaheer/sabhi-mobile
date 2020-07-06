@@ -1,9 +1,10 @@
 import * as React from 'react'
+import { TouchableHighlight } from 'react-native'
+
 import Container from '../Container/Container'
 import Icon from '../Icon/Icon'
 import Text, { TextTypes } from '../Text/Text'
 import { withTheme } from '../../theming'
-import { TouchableHighlight } from 'react-native'
 
 interface AccordionItemProps {
   /**

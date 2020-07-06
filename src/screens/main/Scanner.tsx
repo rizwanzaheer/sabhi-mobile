@@ -31,7 +31,7 @@ export default (props: any) => {
     onBarCodeRead({ data: text })
   }
 
-  const processDafMessage = async (message: string) => {
+  const processSabhiMessage = async (message: string) => {
     const decodedMessage = await handleMessage({
       variables: {
         raw: message,
@@ -66,7 +66,7 @@ export default (props: any) => {
         walletConnectOnSessionRequest(e.data)
         props.navigation.dismiss()
       } else {
-        processDafMessage(e.data)
+        processSabhiMessage(e.data)
       }
     }
 

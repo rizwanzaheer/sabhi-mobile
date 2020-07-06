@@ -1,5 +1,5 @@
 export default {
-  BRAND: '#0078ff',
+  BRAND: '#35568D',
   ACCENT: '#E89835',
   WARN: '#ff6666',
   ERROR: '#ff6666',
