@@ -2,13 +2,20 @@
  *
  */
 import React, { useContext, useEffect, useState } from 'react'
-import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
+import {
+  Container,
+  Text,
+  Screen,
+  Button,
+  Constants,
+  Device,
+} from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import axios from 'axios'
+import axios from 'axios';
 import { Colors, Metrics } from '../../theme'
 import { Image, ActivityIndicator } from 'react-native'
 import { AppContext } from '../../providers/AppContext'
-import LinearGradient from 'react-native-linear-gradient'
+import LinearGradient from 'react-native-linear-gradient';
 
 const Intro: React.FC<NavigationStackScreenProps> & {
   navigationOptions: any
@@ -26,8 +33,10 @@ const Intro: React.FC<NavigationStackScreenProps> & {
   }, [selectedIdentity])
 
   return (
+
     <LinearGradient
-      colors={['#4c669f', '#3b5998', '#192f6a']}
+      // start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
+      colors={['#5F82BD', '#2F4D7D']}
       style={{
         flex: 1,
         // paddingLeft: 15,
@@ -37,28 +46,17 @@ const Intro: React.FC<NavigationStackScreenProps> & {
     >
       <Screen
         safeAreaBottom={true}
-        // safeAreaBottomBackground={Colors.WHITE}
-        background={'primary'}
-        backgroundColor={'#35568D'}
-        footerComponent={
-          !selectedIdentity &&
-          !loading && (
-            <Container paddingHorizontal={true} paddingBottom={true}>
-              <Container alignItems={'center'}>
-                <Container w={300}>
-                  <Button
-                    fullWidth
-                    block={Constants.ButtonBlocks.Filled}
-                    type={Constants.BrandOptions.Secondary}
-                    buttonText={'Get Started'}
-                    onPress={() => navigation.navigate('Onboarding')}
-                  />
-                </Container>
-              </Container>
-            </Container>
-          )
-        }
+      // safeAreaBottomBackground={Colors.WHITE}
+      // background={'primary'}
+      // backgroundColor={'#35568D'}
+      // footerComponent={
+      //   !selectedIdentity &&
+      //   !loading && (
+
+      //   )
+      // }
       >
+
         {loading && (
           <Container flex={1} alignItems={'center'} justifyContent={'center'}>
             <ActivityIndicator size={'large'} />
@@ -66,7 +64,9 @@ const Intro: React.FC<NavigationStackScreenProps> & {
         )}
         {!selectedIdentity && !loading && (
           <Container testID={'ONBOARDING_WELCOME_TOP'}>
-            <Container marginTop={Metrics.spacing.vertical.small}>
+            <Container
+              marginTop={Metrics.spacing.vertical.small}
+            >
               <Image
                 source={require('../../assets/images/onboarding.png')}
                 style={{
@@ -78,51 +78,60 @@ const Intro: React.FC<NavigationStackScreenProps> & {
                 resizeMode={'contain'}
               ></Image>
             </Container>
-            <Container
-              padding={Metrics.spacing.screen.default}
-              //marginTop={50}
+            <Container padding={Metrics.spacing.screen.default}
+            //marginTop={50}
             >
-              <Text
-                type={Constants.TextTypes.H1}
-                textStyle={{ lineHeight: 36 }}
-              >
+              <Text type={Constants.TextTypes.H1} textStyle={{ lineHeight: 36 }}>
                 Secure
-              </Text>
-              <Text
-                type={Constants.TextTypes.H1}
-                bold
-                textColor={Colors.SECONDARY_BRAND_MAIN}
-                textStyle={{ lineHeight: 36 }}
-              >
+            </Text>
+              <Text type={Constants.TextTypes.H1} bold textColor={Colors.SECONDARY_BRAND_MAIN} textStyle={{ lineHeight: 36, }}>
                 Online Identity
-              </Text>
+            </Text>
 
               <Container marginTop={Metrics.spacing.vertical.small}>
                 <Text type={Constants.TextTypes.Body}>
-                  Your online business identity, secure at your fingertips. Send
-                  credentials to a Sabhi 3rd party service.
-                </Text>
+                  Your online business identity, secure at your fingertips. Send credentials to a Sabhi 3rd party service.
+              </Text>
               </Container>
-              <Text
-                type={Constants.TextTypes.H5}
-                textColor={Colors.SECONDARY_BRAND_MAIN}
+              <Text type={Constants.TextTypes.H5} textColor={Colors.SECONDARY_BRAND_MAIN}
                 textStyle={{
                   marginTop: 24,
-                }}
-              >
+                }}>
                 View privacy policy
-              </Text>
+            </Text>
             </Container>
+            <Container
+              paddingHorizontal={true} paddingBottom={true}
+            >
+
+            </Container >
+
           </Container>
         )}
-      </Screen>
-    </LinearGradient>
+        <Container alignItems={'center'} viewStyle={{
+          position: "absolute", alignContent: 'center', alignSelf: 'center',
+          bottom: Metrics.spacing.vertical.extraLarge
+        }}>
+
+          <Container w={300}>
+            <Button
+              fullWidth
+              block={Constants.ButtonBlocks.Filled}
+              type={Constants.BrandOptions.Secondary}
+              buttonText={'Get Started'}
+              onPress={() => navigation.navigate('Onboarding')}
+            />
+          </Container>
+        </Container>
+      </Screen >
+    </LinearGradient >
   )
 }
 
+
 Intro.navigationOptions = ({ navigation }: any) => {
   return {
-    header: null,
+    headerShown: false
   }
 }
 
