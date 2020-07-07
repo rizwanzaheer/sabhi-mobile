@@ -22,8 +22,8 @@ const lightTheme = (colors: { [index: string]: string }) => {
       },
       primary: {
         brand: colors.BRAND,
-        text: colors.CHARCOAL,
-        background: colors.WHITE,
+        text: colors.WHITE,
+        background: colors.PRIMARY_BRAND_LIGHT,
         divider: colors.MEDIUM_GREY,
         accessories: colors.LIGHT_GREY,
         underlay: colors.MEDIUM_GREY,
@@ -41,7 +41,7 @@ const lightTheme = (colors: { [index: string]: string }) => {
         divider: colors.MEDIUM_GREY,
         accessories: colors.MEDIUM_GREY,
         underlay: colors.MEDIUM_GREY,
-        button: colors.MEDIUM_GREY,
+        button: colors.SECONDARY_BRAND_MAIN,
         buttonText: {
           filled: colors.WHITE,
           outlined: colors.MEDIUM_GREY,
@@ -212,8 +212,10 @@ export const createTheme = (
   const colors = customColors ? customColors : DEFAULT_COLORS
   const customDarkSection = darkSection ? darkSection(colors) : null
   const customlightSection = lightSection ? lightSection(colors) : null
-  const customSection = theme === 'light' ? customlightSection : customDarkSection
-  const appliedColors = theme === 'light' ? lightTheme(colors) : darkTheme(colors)
+  const customSection =
+    theme === 'light' ? customlightSection : customDarkSection
+  const appliedColors =
+    theme === 'light' ? lightTheme(colors) : darkTheme(colors)
 
   const baseTheme = {
     ...appliedColors,
@@ -236,7 +238,7 @@ export const createTheme = (
         listItemNote: 15,
         sectionHeader: 14,
         summary: 18,
-        body: 16,
+        body: 18,
         button: 18,
         buttonSmall: 18,
         navButton: 20,
@@ -247,7 +249,7 @@ export const createTheme = (
       section: 20,
     },
     roundedCorners: {
-      buttons: 8,
+      buttons: 16,
       cards: 5,
       textInputs: 8,
       toasts: 5,

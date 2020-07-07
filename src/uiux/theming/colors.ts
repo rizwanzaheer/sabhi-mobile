@@ -1,8 +1,8 @@
 export default {
   BRAND: '#35568D',
   ACCENT: '#E89835',
-  WARN: '#ff6666',
-  ERROR: '#ff6666',
+  // WARN: '#ff6666',
+  // ERROR: '#ff6666',
   INFO: '#0078ff',
   CONFIRM: '#3DCF8A',
   TRANSPARENT: 'transparent',
@@ -13,4 +13,19 @@ export default {
   LIGHT_GREY: '#BBBBBB',
   MEDIUM_GREY: '#CCCCCC',
   DARK_GREY: '#111111',
+
+  // new color scheme
+  PRIMARY_BRAND_MAIN: '#35568D',
+  PRIMARY_BRAND_LIGHT: '#95A7C6',
+  PRIMARY_BRAND_GRADIENT: '#2F4D7D',
+
+  SECONDARY_BRAND_MAIN: '#4DDFBC',
+  SECONDARY_BRAND_LIGHT: '#BBE8DD',
+
+  PRIMARY_BACKGROUND: '#F5F9FF',
+  SECONDARY_BACKGROUND: '#FFFFFF',
+
+  ERROR: '#EC7070',
+  WARN: '#ECB370',
+  HIGH_CONTRAST: '#1C2A40',
 }
