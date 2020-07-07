@@ -35,26 +35,15 @@ const Intro: React.FC<NavigationStackScreenProps> & {
   return (
 
     <LinearGradient
-      // start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
-      colors={['#5F82BD', '#2F4D7D']}
-      style={{
-        flex: 1,
-        // paddingLeft: 15,
-        // paddingRight: 15,
-        // borderRadius: 5
-      }}
+      colors={[Colors.SECONDARY_BRAND_GRADIENT, Colors.PRIMARY_BRAND_GRADIENT]}
+      style={{ flex: 1 }}
     >
       <Screen
         safeAreaBottom={true}
       // safeAreaBottomBackground={Colors.WHITE}
       // background={'primary'}
       // backgroundColor={'#35568D'}
-      // footerComponent={
-      //   !selectedIdentity &&
-      //   !loading && (
 
-      //   )
-      // }
       >
 
         {loading && (
@@ -73,7 +62,6 @@ const Intro: React.FC<NavigationStackScreenProps> & {
                   alignContent: 'center',
                   width: Device.width,
                   height: 100 * (Device.width / 150),
-                  // height: 312 / 2,
                 }}
                 resizeMode={'contain'}
               ></Image>
@@ -108,21 +96,28 @@ const Intro: React.FC<NavigationStackScreenProps> & {
 
           </Container>
         )}
-        <Container alignItems={'center'} viewStyle={{
-          position: "absolute", alignContent: 'center', alignSelf: 'center',
-          bottom: Metrics.spacing.vertical.extraLarge
-        }}>
 
-          <Container w={300}>
-            <Button
-              fullWidth
-              block={Constants.ButtonBlocks.Filled}
-              type={Constants.BrandOptions.Secondary}
-              buttonText={'Get Started'}
-              onPress={() => navigation.navigate('Onboarding')}
-            />
-          </Container>
-        </Container>
+        {
+          !selectedIdentity &&
+          !loading && (
+            <Container alignItems={'center'} viewStyle={{
+              position: "absolute", alignContent: 'center', alignSelf: 'center',
+              bottom: Metrics.spacing.vertical.large
+            }}>
+
+              <Container w={300}>
+                <Button
+                  fullWidth
+                  block={Constants.ButtonBlocks.Filled}
+                  type={Constants.BrandOptions.Secondary}
+                  buttonText={'Get Started'}
+                  onPress={() => navigation.navigate('Onboarding')}
+                />
+              </Container>
+            </Container>
+          )
+        }
+
       </Screen >
     </LinearGradient >
   )

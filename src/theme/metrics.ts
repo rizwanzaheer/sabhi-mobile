@@ -41,7 +41,7 @@ export default {
       small: 8,
       medium: 16,
       default: 32,
-      large: 32,
+      large: 56,
       extraLarge: 64,
     },
     vertical: {
@@ -49,7 +49,7 @@ export default {
       small: 8,
       medium: 16,
       default: 32,
-      large: 32,
+      large: 56,
       extraLarge: 64,
     },
   },
