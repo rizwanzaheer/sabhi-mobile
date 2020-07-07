@@ -23,6 +23,11 @@ import Profile from '../screens/main/Profile'
 import Onboarding from '../screens/main/Onboarding'
 import Restore from '../screens/main/Restore'
 import Intro from '../screens/main/Intro'
+import IntroNext from '../screens/main/IntroNext'
+import IntroStartScanning from '../screens/main/IntroStartScanning'
+import IntroVerifyPhone from '../screens/main/IntroVerifyPhone'
+import IntroVerifiedPhone from '../screens/main/IntroVerifiedPhone'
+import IntroEnableBiometrics from '../screens/main/IntroEnableBiometrics'
 
 import Scanner from '../screens/main/Scanner'
 import MessageProcess from '../screens/main/MessageProcess'
@@ -315,6 +320,21 @@ const Onboard = createStackNavigator(
   {
     Intro: {
       screen: Intro,
+    },
+    IntroNext: {
+      screen: IntroNext,
+    },
+    IntroStartScanning: {
+      screen: IntroStartScanning,
+    },
+    IntroVerifyPhone: {
+      screen: IntroVerifyPhone,
+    },
+    IntroVerifiedPhone: {
+      screen: IntroVerifiedPhone,
+    },
+    IntroEnableBiometrics: {
+      screen: IntroEnableBiometrics,
     },
     Onboarding: {
       screen: Onboarding,
