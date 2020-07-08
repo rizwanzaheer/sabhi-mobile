@@ -22,8 +22,8 @@ const lightTheme = (colors: { [index: string]: string }) => {
       },
       primary: {
         brand: colors.BRAND,
-        text: colors.WHITE,
-        background: colors.PRIMARY_BRAND_LIGHT,
+        text: colors.PRIMARY_BRAND_LIGHT,
+        background: colors.PRIMARY_BACKGROUND,
         divider: colors.MEDIUM_GREY,
         accessories: colors.LIGHT_GREY,
         underlay: colors.MEDIUM_GREY,

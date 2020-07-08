@@ -31,6 +31,8 @@ import ScanFront from '../screens/main/ScanFront'
 import ScanBack from '../screens/main/ScanBack'
 import ConfirmScan from '../screens/main/ConfirmScan'
 
+import PersonalDetail from '../screens/main/PersonalDetail'
+
 import IntroVerifyPhone from '../screens/main/IntroVerifyPhone'
 import IntroVerifiedPhone from '../screens/main/IntroVerifiedPhone'
 import IntroEnableBiometrics from '../screens/main/IntroEnableBiometrics'
@@ -325,7 +327,7 @@ const App = createStackNavigator(
 const Onboard = createStackNavigator(
   {
     Intro: {
-      screen: Intro,
+      screen: PersonalDetail,
     },
     IntroNext: {
       screen: IntroNext,
@@ -350,6 +352,9 @@ const Onboard = createStackNavigator(
     },
     ConfirmScan: {
       screen: ConfirmScan,
+    },
+    PersonalDetail: {
+      screen: PersonalDetail,
     },
     Onboarding: {
       screen: Onboarding,
