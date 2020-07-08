@@ -28,6 +28,7 @@ import ActivityItemHeader from './components/ActivityItemHeader/ActivityItemHead
 import Connection from './components/Connection/Connection'
 import Loader from './components/Loader/Loader'
 import OverlaySign, { Overlay } from './components/Overlay/Overlay'
+import TextField from './components/TextField/TextField'
 
 import BottomSheet, { BottomSnap } from './components/BottomSheet/BottomSheet'
 
@@ -59,6 +60,7 @@ export {
   Container,
   Button,
   Text,
+  TextField,
   Icon,
   LogItem,
   ListItem,
@@ -96,4 +98,9 @@ export {
 /**
  * Theming provider by @callstack/react-theme-provider
  */
-export { ThemeProvider, withTheme, useTheme, createTheme } from './theming/index'
+export {
+  ThemeProvider,
+  withTheme,
+  useTheme,
+  createTheme,
+} from './theming/index'

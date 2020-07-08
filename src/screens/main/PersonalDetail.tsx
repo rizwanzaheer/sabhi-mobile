@@ -2,17 +2,9 @@
  *
  */
 import React, { useContext, useEffect, useState } from 'react'
-import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
+import { Container, Text, Screen, Button, Constants, TextField } from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import { Image, ActivityIndicator, ProgressBarAndroid } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient'
-import * as Progress from 'react-native-progress'
-
-import {
-  TextField,
-  FilledTextField,
-  OutlinedTextField,
-} from 'react-native-material-textfield'
+import { ActivityIndicator, ProgressBarAndroid } from 'react-native'
 
 import { Colors, Metrics } from '../../theme'
 import { AppContext } from '../../providers/AppContext'
@@ -54,14 +46,17 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
       // safeAreaBottomBackground={Colors.WHITE}
       background={'primary'}
       scrollEnabled
-    // backgroundColor={'#35568D'}
+      // backgroundColor={'#35568D'}
     >
       {loading && (
         <Container flex={1} alignItems={'center'} justifyContent={'center'}>
           <ActivityIndicator size={'large'} />
         </Container>
       )}
-      <Container testID={'ONBOARDING_PERSONAL_DETAIL_TOP'} marginBottom={Metrics.spacing.screen.extraLarge * 2}>
+      <Container
+        testID={'ONBOARDING_PERSONAL_DETAIL_TOP'}
+        marginBottom={Metrics.spacing.screen.extraLarge * 2}
+      >
         <Container padding={Metrics.spacing.screen.default}>
           <Text
             textColor={Colors.BRAND}
@@ -96,10 +91,10 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
               You will be prompted to scan your ID.
             </Text>
           </Container>
-          <Container marginTop={Metrics.spacing.vertical.default}>
+          <Container marginTop={Metrics.spacing.vertical.medium}>
             <TextField
-              label='Full Name'
-              keyboardType='numeric'
+              label="Full Name"
+              keyboardType="numeric"
               baseColor={Colors.PRIMARY_BRAND_MAIN}
               tintColor={Colors.SECONDARY_BRAND_MAIN}
               textColor={Colors.PRIMARY_BRAND_MAIN}
@@ -107,13 +102,13 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
               activeLineWidth={4}
               // placeholder={'Please enter first name'}
               fontSize={18}
-            // formatText={this.formatText}
-            // onSubmitEditing={this.onSubmit}
-            // ref={this.fieldRef}
+              // formatText={this.formatText}
+              // onSubmitEditing={this.onSubmit}
+              // ref={this.fieldRef}
             />
             <TextField
-              label='Last Name'
-              keyboardType='numeric'
+              label="Last Name"
+              keyboardType="numeric"
               baseColor={Colors.PRIMARY_BRAND_MAIN}
               tintColor={Colors.SECONDARY_BRAND_MAIN}
               textColor={Colors.PRIMARY_BRAND_MAIN}
@@ -121,13 +116,13 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
               activeLineWidth={4}
               // placeholder={'Please enter last name'}
               fontSize={18}
-            // formatText={this.formatText}
-            // onSubmitEditing={this.onSubmit}
-            // ref={this.fieldRef}
+              // formatText={this.formatText}
+              // onSubmitEditing={this.onSubmit}
+              // ref={this.fieldRef}
             />
             <TextField
-              label='Street Address'
-              keyboardType='numeric'
+              label="Street Address"
+              keyboardType="numeric"
               baseColor={Colors.PRIMARY_BRAND_MAIN}
               tintColor={Colors.SECONDARY_BRAND_MAIN}
               textColor={Colors.PRIMARY_BRAND_MAIN}
@@ -135,13 +130,51 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
               activeLineWidth={4}
               // placeholder={'Please enter street address'}
               fontSize={18}
-            // formatText={this.formatText}
-            // onSubmitEditing={this.onSubmit}
-            // ref={this.fieldRef}
+              // formatText={this.formatText}
+              // onSubmitEditing={this.onSubmit}
+              // ref={this.fieldRef}
             />
+            <Container flexDirection="row">
+              <Container
+                flex={1}
+                marginRight={Metrics.spacing.horizontal.default}
+              >
+                <TextField
+                  label="Country"
+                  keyboardType="numeric"
+                  baseColor={Colors.PRIMARY_BRAND_MAIN}
+                  tintColor={Colors.SECONDARY_BRAND_MAIN}
+                  textColor={Colors.PRIMARY_BRAND_MAIN}
+                  lineWidth={2}
+                  activeLineWidth={4}
+                  // placeholder={'Please enter country of residence'}
+                  fontSize={18}
+
+                  // formatText={this.formatText}
+                  // onSubmitEditing={this.onSubmit}
+                  // ref={this.fieldRef}
+                />
+              </Container>
+              <Container flex={1}>
+                <TextField
+                  label="Postal Code"
+                  keyboardType="numeric"
+                  baseColor={Colors.PRIMARY_BRAND_MAIN}
+                  tintColor={Colors.SECONDARY_BRAND_MAIN}
+                  textColor={Colors.PRIMARY_BRAND_MAIN}
+                  lineWidth={2}
+                  activeLineWidth={4}
+                  // placeholder={'Please enter country of residence'}
+                  fontSize={18}
+                  // formatText={this.formatText}
+                  // onSubmitEditing={this.onSubmit}
+                  // ref={this.fieldRef}
+                />
+              </Container>
+            </Container>
             <TextField
-              label='Country of Residence'
-              keyboardType='numeric'
+              label="Country of Residence"
+              keyboardType="numeric"
               baseColor={Colors.PRIMARY_BRAND_MAIN}
               tintColor={Colors.SECONDARY_BRAND_MAIN}
               textColor={Colors.PRIMARY_BRAND_MAIN}
@@ -149,11 +182,10 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
               activeLineWidth={4}
               // placeholder={'Please enter country of residence'}
               fontSize={18}
-            // formatText={this.formatText}
-            // onSubmitEditing={this.onSubmit}
-            // ref={this.fieldRef}
+              // formatText={this.formatText}
+              // onSubmitEditing={this.onSubmit}
+              // ref={this.fieldRef}
             />
-
           </Container>
         </Container>
       </Container>
