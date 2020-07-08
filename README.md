@@ -1,6 +1,4 @@
-
 # Sabhi mobile
-
 
 ## Setup
 
@@ -74,4 +72,16 @@ To use a different env file set `ENVFILE` variable:
 
 ```
 $ ENVFILE=.env.production react-native run-android
+```
+
+## Troubleshooting
+
+## react-native-material-textfield
+
+Fix the react-native-material-textfield `"style"` of `"undefined"`
+
+Gist:
+
+```
+https://gist.github.com/Armanoide/4628a6b1c123647a31b9e40205bfabf0
 ```

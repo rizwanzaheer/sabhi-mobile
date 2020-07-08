@@ -32,102 +32,114 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
     }
   }, [selectedIdentity])
 
-  // const fieldRef: any = React.createRef();
+  const fieldRef: any = React.createRef()
 
-  // const onSubmit: any = () => {
-  //   let { current: field } = fieldRef;
+  const onSubmit: any = () => {
+    let { current: field } = fieldRef
 
-  //   console.log(field.value());
-  // };
+    console.log(field.value())
+  }
 
-  // const formatText: any = (text: any) => {
-  //   return text.replace(/[^+\d]/g, '');
-  // };
+  const formatText: any = (text: any) => {
+    return text.replace(/[^+\d]/g, '')
+  }
+
+  const onChangeText = (e: any) => {
+    console.log('onChangeText is: ', e)
+  }
 
   return (
-    <LinearGradient
-      colors={[Colors.SECONDARY_BRAND_GRADIENT, Colors.PRIMARY_BRAND_GRADIENT]}
-      style={{ flex: 1 }}
+    <Screen
+      safeAreaBottom={true}
+      // safeAreaBottomBackground={Colors.WHITE}
+      background={'primary'}
+      // scrollEnabled
+      // backgroundColor={'#35568D'}
     >
-      <Screen
-        safeAreaBottom={true}
-        // safeAreaBottomBackground={Colors.WHITE}
-        background={'primary'}
-        // backgroundColor={'#35568D'}
-      >
-        {loading && (
-          <Container flex={1} alignItems={'center'} justifyContent={'center'}>
-            <ActivityIndicator size={'large'} />
-          </Container>
-        )}
-        <Container testID={'ONBOARDING_PERSONAL_DETAIL_TOP'}>
-          <Container padding={Metrics.spacing.screen.default}>
-            <Text
-              textColor={Colors.BRAND}
-              type={Constants.TextTypes.H1}
-              textStyle={{ lineHeight: 36 }}
-            >
-              Personal
-            </Text>
-            <Text
-              type={Constants.TextTypes.H1}
-              bold
-              textColor={Colors.BRAND}
-              textStyle={{ lineHeight: 36 }}
-            >
-              Details
-            </Text>
-            <Container
-              paddingTop={Metrics.spacing.vertical.medium}
-              paddingBottom={Metrics.spacing.vertical.small}
-            >
-              <ProgressBarAndroid
-                styleAttr="Horizontal"
-                indeterminate={false}
-                progress={0.2}
-                color={Colors.SECONDARY_BRAND_MAIN}
-              />
-            </Container>
-
-            <Container marginTop={Metrics.spacing.vertical.small}>
-              <Text type={Constants.TextTypes.Body}>
-                To secure your account, we need to determine if it’s really you.
-                You will be prompted to scan your ID.
-              </Text>
-            </Container>
-            <Container w={200}>
-              <FilledTextField
-                label="Phone number"
-                keyboardType="phone-pad"
-                formatText={() => console.log('on format text')}
-                onSubmitEditing={() => console.log('on submit editing')}
-                // ref={fieldRef}
-              />
-            </Container>
-          </Container>
+      {loading && (
+        <Container flex={1} alignItems={'center'} justifyContent={'center'}>
+          <ActivityIndicator size={'large'} />
         </Container>
+      )}
+      <Container testID={'ONBOARDING_PERSONAL_DETAIL_TOP'}>
+        <Container padding={Metrics.spacing.screen.default}>
+          <Text
+            textColor={Colors.BRAND}
+            type={Constants.TextTypes.H1}
+            textStyle={{ lineHeight: 36 }}
+          >
+            Personal
+          </Text>
+          <Text
+            type={Constants.TextTypes.H1}
+            bold
+            textColor={Colors.BRAND}
+            textStyle={{ lineHeight: 36 }}
+          >
+            Details
+          </Text>
+          <Container
+            paddingTop={Metrics.spacing.vertical.medium}
+            paddingBottom={Metrics.spacing.vertical.small}
+          >
+            <ProgressBarAndroid
+              styleAttr="Horizontal"
+              indeterminate={false}
+              progress={0.2}
+              color={Colors.SECONDARY_BRAND_MAIN}
+            />
+          </Container>
 
-        <Container
-          alignItems={'center'}
-          viewStyle={{
-            position: 'absolute',
-            alignContent: 'center',
-            alignSelf: 'center',
-            bottom: Metrics.spacing.vertical.large,
-          }}
-        >
-          <Container w={300}>
-            <Button
-              fullWidth
-              block={Constants.ButtonBlocks.Filled}
-              type={Constants.BrandOptions.Secondary}
-              buttonText={'Confirm'}
-              onPress={() => navigation.navigate('IntroStartScanning')}
+          <Container marginTop={Metrics.spacing.vertical.small}>
+            <Text type={Constants.TextTypes.Body}>
+              To secure your account, we need to determine if it’s really you.
+              You will be prompted to scan your ID.
+            </Text>
+          </Container>
+          <Container marginTop={Metrics.spacing.vertical.default}>
+            <TextField
+              label="Name"
+              keyboardType="default"
+              // formatText={formatText}adfa
+              tintColor={Colors.SECONDARY_BRAND_MAIN}
+              // textColor={Colors.PRIMARY_BRAND_MAIN}
+              baseColor={Colors.PRIMARY_BRAND_MAIN}
+              placeholder={'Please enter name'}
+              onSubmitEditing={onSubmit}
+              fontSize={18}
+              labelTextStyle={{
+                fontSize: 18,
+              }}
+              titleTextStyle={{
+                fontSize: 18,
+              }}
+              onChangeText={e => onChangeText(e)}
+              ref={fieldRef}
             />
           </Container>
         </Container>
-      </Screen>
-    </LinearGradient>
+      </Container>
+
+      <Container
+        alignItems={'center'}
+        viewStyle={{
+          position: 'absolute',
+          alignContent: 'center',
+          alignSelf: 'center',
+          bottom: Metrics.spacing.vertical.large,
+        }}
+      >
+        <Container w={300}>
+          <Button
+            fullWidth
+            block={Constants.ButtonBlocks.Filled}
+            type={Constants.BrandOptions.Secondary}
+            buttonText={'Confirm'}
+            onPress={() => navigation.navigate('IntroStartScanning')}
+          />
+        </Container>
+      </Container>
+    </Screen>
   )
 }
 
