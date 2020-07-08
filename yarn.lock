@@ -1449,6 +1449,15 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
+"@react-native-community/art@^1.1.2":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/art/-/art-1.2.0.tgz#386d95393f6042d9006f9d4bc6063fb898794460"
+  integrity sha512-a+ZcRGl/BzLa89yi33Mbn5SHavsEXqKUMdbfLf3U8MDLElndPqUetoJyGkv63+BcPO49UMWiQRP1YUz6/zfJ+A==
+  dependencies:
+    art "^0.10.3"
+    invariant "^2.2.4"
+    prop-types "^15.7.2"
+
 "@react-native-community/async-storage@^1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.8.0.tgz#5f23ad486daa284398c71f2cc94d15fb7be40bb8"
@@ -1919,6 +1928,14 @@
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react-native-material-textfield@^0.16.3":
+  version "0.16.3"
+  resolved "https://registry.yarnpkg.com/@types/react-native-material-textfield/-/react-native-material-textfield-0.16.3.tgz#e4db8bba1debf5481c4cb63cb5875928642aa88c"
+  integrity sha512-nviHt7LfdNzVcgIGJavo/sn4tEwDZl+hLU5byNEva1Ixg6ZgJQbqwT45KaV1KS2KDzyjjaJl7bEZC9fPViT5hQ==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
 
 "@types/react-native-modal@^4.1.1":
   version "4.1.1"
@@ -2566,6 +2583,11 @@ arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
+
+art@^0.10.3:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/art/-/art-0.10.3.tgz#b01d84a968ccce6208df55a733838c96caeeaea2"
+  integrity sha512-HXwbdofRTiJT6qZX/FnchtldzJjS3vkLJxQilc3Xj+ma2MXjY4UAyQ0ls1XZYVnDvVIBiFZbC6QsvtW86TD6tQ==
 
 asap@^2.0.0, asap@~2.0.3:
   version "2.0.6"
@@ -9661,7 +9683,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10020,6 +10042,13 @@ react-native-localize@^1.1.4:
   resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.2.1.tgz#7c68a9275117942763439bf570828f05fb5bbdc7"
   integrity sha512-givdHOFqu41EMgI6HikNnKhsze4jlJ+BVoznAAHuKFCLWwDr7z6S1tcq7c/C7zHrKlESpE5H1ZqAPU3R5Hhdog==
 
+react-native-material-textfield@^0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/react-native-material-textfield/-/react-native-material-textfield-0.16.1.tgz#649e71344bb8a7225d5cea7c7b51cd38bcb2bbfc"
+  integrity sha512-pcV/ic3i6vYEODS7pvAMUYJ+evkzIB8cjXtSzkab9rBtYNGRpAlM0Yp8QNnjZ7foZqkj9Ynav0nguWcuJST10A==
+  dependencies:
+    prop-types "^15.5.9"
+
 react-native-modal@*, react-native-modal@^11.5.6:
   version "11.5.6"
   resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-11.5.6.tgz#bb25a78c35a5e24f45de060e5f64284397d38a87"
@@ -10032,6 +10061,14 @@ react-native-platform-touchable@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/react-native-platform-touchable/-/react-native-platform-touchable-1.1.1.tgz#fde4acc65eea585d28b164d0c3716a42129a68e4"
   integrity sha1-/eSsxl7qWF0osWTQw3FqQhKaaOQ=
+
+react-native-progress@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-progress/-/react-native-progress-4.1.2.tgz#ffb2264ddfeba409c730e36a9791bb7bbe07a00d"
+  integrity sha512-sFHs6k6npWDOyvQoL2NeyOyHb+q1s8iOAOeyzoObN77zkxOAsgJt9FcSJLRq70Mw7qSGNJMFDqCgvYR1huYRwQ==
+  dependencies:
+    "@react-native-community/art" "^1.1.2"
+    prop-types "^15.7.2"
 
 react-native-qrcode-svg@^6.0.6:
   version "6.0.6"

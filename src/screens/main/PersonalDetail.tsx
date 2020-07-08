@@ -4,10 +4,18 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import { Colors, Metrics } from '../../theme'
-import { Image, ActivityIndicator } from 'react-native'
-import { AppContext } from '../../providers/AppContext'
+import { Image, ActivityIndicator, ProgressBarAndroid } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
+import * as Progress from 'react-native-progress'
+
+import {
+  TextField,
+  FilledTextField,
+  OutlinedTextField,
+} from 'react-native-material-textfield'
+
+import { Colors, Metrics } from '../../theme'
+import { AppContext } from '../../providers/AppContext'
 
 const PersonalDetail: React.FC<NavigationStackScreenProps> & {
   navigationOptions: any
@@ -23,6 +31,18 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
       setLoading(false)
     }
   }, [selectedIdentity])
+
+  // const fieldRef: any = React.createRef();
+
+  // const onSubmit: any = () => {
+  //   let { current: field } = fieldRef;
+
+  //   console.log(field.value());
+  // };
+
+  // const formatText: any = (text: any) => {
+  //   return text.replace(/[^+\d]/g, '');
+  // };
 
   return (
     <LinearGradient
@@ -41,24 +61,13 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
           </Container>
         )}
         <Container testID={'ONBOARDING_PERSONAL_DETAIL_TOP'}>
-          {/* <Container marginTop={Metrics.spacing.vertical.small}>
-            <Image
-              source={require('../../assets/images/onboarding.png')}
-              style={{
-                alignContent: 'center',
-                width: Device.width,
-                height: 100 * (Device.width / 150),
-              }}
-              resizeMode={'contain'}
-            ></Image>
-          </Container> */}
           <Container padding={Metrics.spacing.screen.default}>
             <Text
-              // textColor={Colors.BRAND}
+              textColor={Colors.BRAND}
               type={Constants.TextTypes.H1}
               textStyle={{ lineHeight: 36 }}
             >
-              We need to
+              Personal
             </Text>
             <Text
               type={Constants.TextTypes.H1}
@@ -66,17 +75,34 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
               textColor={Colors.BRAND}
               textStyle={{ lineHeight: 36 }}
             >
-              make sure its you.
+              Details
             </Text>
+            <Container
+              paddingTop={Metrics.spacing.vertical.medium}
+              paddingBottom={Metrics.spacing.vertical.small}
+            >
+              <ProgressBarAndroid
+                styleAttr="Horizontal"
+                indeterminate={false}
+                progress={0.2}
+                color={Colors.SECONDARY_BRAND_MAIN}
+              />
+            </Container>
 
             <Container marginTop={Metrics.spacing.vertical.small}>
-              <Text
-                type={Constants.TextTypes.Body}
-                // textColor={Colors.BRAND}
-              >
+              <Text type={Constants.TextTypes.Body}>
                 To secure your account, we need to determine if it’s really you.
                 You will be prompted to scan your ID.
               </Text>
+            </Container>
+            <Container w={200}>
+              <FilledTextField
+                label="Phone number"
+                keyboardType="phone-pad"
+                formatText={() => console.log('on format text')}
+                onSubmitEditing={() => console.log('on submit editing')}
+                // ref={fieldRef}
+              />
             </Container>
           </Container>
         </Container>
