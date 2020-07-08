@@ -32,6 +32,7 @@ import ScanBack from '../screens/main/ScanBack'
 import ConfirmScan from '../screens/main/ConfirmScan'
 
 import PersonalDetail from '../screens/main/PersonalDetail'
+import CertificateOfIncorporation from '../screens/main/CertificateOfIncorporation'
 
 import IntroVerifyPhone from '../screens/main/IntroVerifyPhone'
 import IntroVerifiedPhone from '../screens/main/IntroVerifiedPhone'
@@ -327,7 +328,7 @@ const App = createStackNavigator(
 const Onboard = createStackNavigator(
   {
     Intro: {
-      screen: PersonalDetail,
+      screen: CertificateOfIncorporation,
     },
     IntroNext: {
       screen: IntroNext,
@@ -355,6 +356,9 @@ const Onboard = createStackNavigator(
     },
     PersonalDetail: {
       screen: PersonalDetail,
+    },
+    CertificateOfIncorporation: {
+      screen: CertificateOfIncorporation,
     },
     Onboarding: {
       screen: Onboarding,
