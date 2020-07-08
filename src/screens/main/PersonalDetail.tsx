@@ -53,15 +53,15 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
       safeAreaBottom={true}
       // safeAreaBottomBackground={Colors.WHITE}
       background={'primary'}
-      // scrollEnabled
-      // backgroundColor={'#35568D'}
+      scrollEnabled
+    // backgroundColor={'#35568D'}
     >
       {loading && (
         <Container flex={1} alignItems={'center'} justifyContent={'center'}>
           <ActivityIndicator size={'large'} />
         </Container>
       )}
-      <Container testID={'ONBOARDING_PERSONAL_DETAIL_TOP'}>
+      <Container testID={'ONBOARDING_PERSONAL_DETAIL_TOP'} marginBottom={Metrics.spacing.screen.extraLarge * 2}>
         <Container padding={Metrics.spacing.screen.default}>
           <Text
             textColor={Colors.BRAND}
@@ -98,24 +98,62 @@ const PersonalDetail: React.FC<NavigationStackScreenProps> & {
           </Container>
           <Container marginTop={Metrics.spacing.vertical.default}>
             <TextField
-              label="Name"
-              keyboardType="default"
-              // formatText={formatText}adfa
-              tintColor={Colors.SECONDARY_BRAND_MAIN}
-              // textColor={Colors.PRIMARY_BRAND_MAIN}
+              label='Full Name'
+              keyboardType='numeric'
               baseColor={Colors.PRIMARY_BRAND_MAIN}
-              placeholder={'Please enter name'}
-              onSubmitEditing={onSubmit}
+              tintColor={Colors.SECONDARY_BRAND_MAIN}
+              textColor={Colors.PRIMARY_BRAND_MAIN}
+              lineWidth={2}
+              activeLineWidth={4}
+              // placeholder={'Please enter first name'}
               fontSize={18}
-              labelTextStyle={{
-                fontSize: 18,
-              }}
-              titleTextStyle={{
-                fontSize: 18,
-              }}
-              onChangeText={e => onChangeText(e)}
-              ref={fieldRef}
+            // formatText={this.formatText}
+            // onSubmitEditing={this.onSubmit}
+            // ref={this.fieldRef}
             />
+            <TextField
+              label='Last Name'
+              keyboardType='numeric'
+              baseColor={Colors.PRIMARY_BRAND_MAIN}
+              tintColor={Colors.SECONDARY_BRAND_MAIN}
+              textColor={Colors.PRIMARY_BRAND_MAIN}
+              lineWidth={2}
+              activeLineWidth={4}
+              // placeholder={'Please enter last name'}
+              fontSize={18}
+            // formatText={this.formatText}
+            // onSubmitEditing={this.onSubmit}
+            // ref={this.fieldRef}
+            />
+            <TextField
+              label='Street Address'
+              keyboardType='numeric'
+              baseColor={Colors.PRIMARY_BRAND_MAIN}
+              tintColor={Colors.SECONDARY_BRAND_MAIN}
+              textColor={Colors.PRIMARY_BRAND_MAIN}
+              lineWidth={2}
+              activeLineWidth={4}
+              // placeholder={'Please enter street address'}
+              fontSize={18}
+            // formatText={this.formatText}
+            // onSubmitEditing={this.onSubmit}
+            // ref={this.fieldRef}
+            />
+            <TextField
+              label='Country of Residence'
+              keyboardType='numeric'
+              baseColor={Colors.PRIMARY_BRAND_MAIN}
+              tintColor={Colors.SECONDARY_BRAND_MAIN}
+              textColor={Colors.PRIMARY_BRAND_MAIN}
+              lineWidth={2}
+              activeLineWidth={4}
+              // placeholder={'Please enter country of residence'}
+              fontSize={18}
+            // formatText={this.formatText}
+            // onSubmitEditing={this.onSubmit}
+            // ref={this.fieldRef}
+            />
+
           </Container>
         </Container>
       </Container>
