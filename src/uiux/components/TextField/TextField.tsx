@@ -141,13 +141,15 @@ export interface UIUXTextFieldProps {
    * Transform the text
    */
   theme: any
+
+  inputContainerStyle?: any
 }
 
-const UIUXTextField: React.FC<UIUXTextFieldProps> =
+const UIUXTextField: React.FC<UIUXTextFieldProps>
   // & {
   //   Types: UIUX.TextTypesStatic
   // }
-  props => {
+  = props => {
     // const TextThemeMap: UIUX.TextDefaultThemeMapTypes = {
     //   h1: {
     //     fontSize: props.theme.text.sizes.h1,
@@ -249,17 +251,18 @@ const UIUXTextField: React.FC<UIUXTextFieldProps> =
           activeLineWidth={props.activeLineWidth || 4}
           // placeholder={'Please enter country of residence'}
           fontSize={props.fontSize || 18}
-          inputContainerStyle={{
+          inputContainerStyle={props.inputContainerStyle || {
             paddingRight: 32,
           }}
           keyboardType={props.keyboardType || 'numeric'}
-          // formatText={this.formatText}
-          // onSubmitEditing={this.onSubmit}
-          // ref={this.fieldRef}
+        // formatText={this.formatText}
+        // onSubmitEditing={this.onSubmit}
+        // ref={this.fieldRef}
         />
         <Container viewStyle={{ position: 'absolute', right: 0, top: 30 }}>
           <Icon
             color={props.iconColor}
+            size={24}
             icon={{
               name: props.iconName || 'edit',
               iconFamily: props.iconFamily || 'MaterialIcons',
