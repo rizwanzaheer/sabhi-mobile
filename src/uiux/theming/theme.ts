@@ -104,6 +104,20 @@ const lightTheme = (colors: { [index: string]: string }) => {
           clear: colors.CONFIRM,
         },
       },
+      custom: {
+        brand: colors.BRAND,
+        text: colors.PRIMARY_BRAND_LIGHT,
+        background: colors.BRAND,
+        divider: colors.PRIMARY_BRAND_LIGHT,
+        accessories: colors.PRIMARY_BRAND_LIGHT,
+        underlay: colors.PRIMARY_BRAND_LIGHT,
+        button: colors.WHITE,
+        buttonText: {
+          filled: colors.PRIMARY_BRAND_MAIN,
+          outlined: colors.CONFIRM,
+          clear: colors.CONFIRM,
+        },
+      },
     },
   }
 }
@@ -193,6 +207,20 @@ const darkTheme = (colors: { [index: string]: string }) => {
         accessories: colors.CONFIRM,
         underlay: colors.CONFIRM,
         button: colors.CONFIRM,
+        buttonText: {
+          filled: colors.WHITE,
+          outlined: colors.CONFIRM,
+          clear: colors.CONFIRM,
+        },
+      },
+      custom: {
+        brand: colors.BRAND,
+        text: colors.PRIMARY_BRAND_LIGHT,
+        background: colors.BRAND,
+        divider: colors.PRIMARY_BRAND_LIGHT,
+        accessories: colors.PRIMARY_BRAND_LIGHT,
+        underlay: colors.PRIMARY_BRAND_LIGHT,
+        button: colors.PRIMARY_BRAND_LIGHT,
         buttonText: {
           filled: colors.WHITE,
           outlined: colors.CONFIRM,

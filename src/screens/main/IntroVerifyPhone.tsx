@@ -4,7 +4,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import axios from 'axios'
 import { Colors, Metrics } from '../../theme'
 import { Image, ActivityIndicator } from 'react-native'
 import { AppContext } from '../../providers/AppContext'

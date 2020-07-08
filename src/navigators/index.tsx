@@ -24,7 +24,13 @@ import Onboarding from '../screens/main/Onboarding'
 import Restore from '../screens/main/Restore'
 import Intro from '../screens/main/Intro'
 import IntroNext from '../screens/main/IntroNext'
+
+// Intro Scan/CNIC Scan
 import IntroStartScanning from '../screens/main/IntroStartScanning'
+import ScanFront from '../screens/main/ScanFront'
+import ScanBack from '../screens/main/ScanBack'
+import ConfirmScan from '../screens/main/ConfirmScan'
+
 import IntroVerifyPhone from '../screens/main/IntroVerifyPhone'
 import IntroVerifiedPhone from '../screens/main/IntroVerifiedPhone'
 import IntroEnableBiometrics from '../screens/main/IntroEnableBiometrics'
@@ -324,9 +330,6 @@ const Onboard = createStackNavigator(
     IntroNext: {
       screen: IntroNext,
     },
-    IntroStartScanning: {
-      screen: IntroStartScanning,
-    },
     IntroVerifyPhone: {
       screen: IntroVerifyPhone,
     },
@@ -335,6 +338,18 @@ const Onboard = createStackNavigator(
     },
     IntroEnableBiometrics: {
       screen: IntroEnableBiometrics,
+    },
+    IntroStartScanning: {
+      screen: IntroStartScanning,
+    },
+    ScanFront: {
+      screen: ScanFront,
+    },
+    ScanBack: {
+      screen: ScanBack,
+    },
+    ConfirmScan: {
+      screen: ConfirmScan,
     },
     Onboarding: {
       screen: Onboarding,

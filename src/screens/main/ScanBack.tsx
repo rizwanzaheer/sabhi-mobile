@@ -4,13 +4,13 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Image, ActivityIndicator } from 'react-native'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
 import { RNCamera } from 'react-native-camera'
 
+import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
 import { Colors, Metrics } from '../../theme'
 import { AppContext } from '../../providers/AppContext'
 
-const ScanFront: React.FC<NavigationStackScreenProps> & {
+const ScanBack: React.FC<NavigationStackScreenProps> & {
   navigationOptions: any
 } = ({ navigation }) => {
   const [selectedIdentity] = useContext(AppContext)
@@ -101,8 +101,8 @@ const ScanFront: React.FC<NavigationStackScreenProps> & {
             fullWidth
             block={Constants.ButtonBlocks.Filled}
             type={Constants.BrandOptions.Secondary}
-            buttonText={'Scan Front'}
-            onPress={() => navigation.navigate('ScanBack')}
+            buttonText={'Scan Back'}
+            onPress={() => navigation.navigate('ConfirmScan')}
           />
         </Container>
       </Container>
@@ -110,10 +110,10 @@ const ScanFront: React.FC<NavigationStackScreenProps> & {
   )
 }
 
-ScanFront.navigationOptions = ({ navigation }: any) => {
+ScanBack.navigationOptions = ({ navigation }: any) => {
   return {
     headerShown: false,
   }
 }
 
-export default ScanFront
+export default ScanBack

@@ -4,13 +4,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Image, ActivityIndicator } from 'react-native'
 import { NavigationStackScreenProps } from 'react-navigation-stack'
-import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
 import { RNCamera } from 'react-native-camera'
+import LinearGradient from 'react-native-linear-gradient'
+import { Container, Text, Screen, Button, Constants, Device } from '@uiux'
 
 import { Colors, Metrics } from '../../theme'
 import { AppContext } from '../../providers/AppContext'
 
-const ScanFront: React.FC<NavigationStackScreenProps> & {
+const ConfirmScan: React.FC<NavigationStackScreenProps> & {
   navigationOptions: any
 } = ({ navigation }) => {
   const [selectedIdentity] = useContext(AppContext)
@@ -88,32 +89,55 @@ const ScanFront: React.FC<NavigationStackScreenProps> & {
       </Container>
 
       <Container
-        alignItems={'center'}
+        flexDirection={'row'}
+        w={Device.width}
         viewStyle={{
           position: 'absolute',
-          alignContent: 'center',
           alignSelf: 'center',
           bottom: Metrics.spacing.vertical.large,
         }}
+        paddingHorizontal={Metrics.spacing.horizontal.default}
       >
-        <Container w={300}>
+        {/* <Container
+          //w={300}
+          flexDirection={'row'}
+          viewStyle={{
+            // position: 'absolute',
+            // alignContent: 'center',
+            alignSelf: 'center',
+            // bottom: Metrics.spacing.vertical.large,
+            // padding: 0
+          }}
+        > */}
+        <Container flex={1} padding={Metrics.spacing.horizontal.small}>
           <Button
-            fullWidth
+            // fullWidth
             block={Constants.ButtonBlocks.Filled}
-            type={Constants.BrandOptions.Secondary}
-            buttonText={'Scan Front'}
-            onPress={() => navigation.navigate('ScanBack')}
+            type={Constants.BrandOptions.Custom}
+            buttonText={'Retake'}
+            onPress={() => navigation.navigate('ConfirmScan')}
           />
         </Container>
+        <Container flex={2} padding={Metrics.spacing.horizontal.small}>
+          <Button
+            // fullWidth
+            block={Constants.ButtonBlocks.Filled}
+            type={Constants.BrandOptions.Secondary}
+            buttonText={'Confirm'}
+            onPress={() => navigation.navigate('ConfirmScan')}
+          />
+        </Container>
+
+        {/* </Container> */}
       </Container>
     </Screen>
   )
 }
 
-ScanFront.navigationOptions = ({ navigation }: any) => {
+ConfirmScan.navigationOptions = ({ navigation }: any) => {
   return {
     headerShown: false,
   }
 }
 
-export default ScanFront
+export default ConfirmScan
