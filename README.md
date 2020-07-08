@@ -79,6 +79,7 @@ $ ENVFILE=.env.production react-native run-android
 ## react-native-material-textfield
 
 Fix the react-native-material-textfield `"style"` of `"undefined"`
+
 To get the complete information please follow the below gist
 
 Gist:
